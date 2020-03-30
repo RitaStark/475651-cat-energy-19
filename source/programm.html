@@ -36,16 +36,16 @@
     <h2 class="form-page__header">Подбор программы</h2>
     <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-    <form>
+    <form action="https://echo.htmlacademy.ru">
       <section class="pet-info">
         <label for="cat-name">Имя:*</label>
-        <input class="form-field__input" type="text" id="cat-name" name="cat-name" value="Барсик">
+        <input class="pet-info__input" type="text" id="cat-name" name="cat-name" value="Барсик">
 
-        <label for="cat-name">Вес(кг):*</label>
-        <input class="form-field__input" type="text" id="cat-name" name="cat-name" value="7">
+        <label for="cat-weight">Вес(кг):*</label>
+        <input class="pet-info__input" type="text" id="cat-weight" name="cat-weight" value="7">
 
-        <label for="cat-name">Возраст(лет):*</label>
-        <input class="form-field__input" type="text" id="cat-name" name="cat-name" value="7">
+        <label for="cat-age">Возраст(лет):*</label>
+        <input class="pet-info__input" type="text" id="cat-age" name="cat-age" value="7">
       </section>
 
       <section class="reason">
@@ -57,11 +57,13 @@
       </section>
 
       <section class="pet-owner-info">
-        <label for="cat-name">e-mail:*</label>
-        <input class="form-field__input" type="text" id="cat-name" name="cat-name" value="kuklachev@gmail.com">
+        <label for="pet-owner-mail">e-mail:*</label>
+        <input class="pet-owner-info__input" type="text" id="pet-owner-mail" name="pet-owner-mail"
+          value="kuklachev@gmail.com">
 
-        <label for="cat-name">телефон:*</label>
-        <input class="form-field__input" type="text" id="cat-name" name="cat-name" value="8 (960) 900-60-90">
+        <label for="pet-owner-tel">телефон:*</label>
+        <input class="pet-owner-info__input" type="text" id="pet-owner-tel" name="pet-owner-tel"
+          value="8 (960) 900-60-90">
       </section>
 
       <section class="comment">
@@ -84,21 +86,32 @@
 
     </form>
 
+    <section class="contacts">
+      <div class="contacts__details">
+        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <!-- <iframe src="" frameborder="0"></iframe> -->
+      <img class="contacts__map" src="#" width="#" height="#" alt="Изображение карты">
+    </section>
+
   </main>
 
 
   <footer class="page-footer">
-    <img class="page-footer__logo">
+    <img src="#" alt="Логотип" class="page-footer__logo">
 
     <ul class="page-footer__social social-list">
       <li class="social-list__item">
-        <a class="social-list__link"><img src="#" width="#" height="#" alt="Логотип ВКонтакте"></a>
+        <a class="social-list__link social-list__link--vk"><img src="#" width="#" height="#"
+            alt="Логотип ВКонтакте"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link"><img src="#" width="#" height="#" alt="Логотип Инстаграм"></a>
+        <a class="social-list__link social-list__link--inst"><img src="#" width="#" height="#"
+            alt="Логотип Инстаграм"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link"><img src="#" width="#" height="#" alt="Логотип Фейсбук"></a>
+        <a class="social-list__link social-list__link--fb"><img src="#" width="#" height="#" alt="Логотип Фейсбук"></a>
       </li>
     </ul>
 
