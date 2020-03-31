@@ -4,17 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-text" src="#" width="#" height="#" alt="Логотип Кэт-энерджи">
-      <img class="page-header__logo-image" src="#" width="#" height="#" alt="Логотип Кэт-энерджи">
-    </a>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px"
+          alt="Логотип Кэт-энерджи">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <img src="img/icon-close.svg" width="19px" height="19px" alt="Значок меню">
+      </button>
+    </div>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
