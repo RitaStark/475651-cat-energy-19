@@ -18,20 +18,21 @@
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
-  padding: 29px 20px 50px 20px;
+  padding: 29px 20px 19px 20px;
 }
 
 .intro__container {
-  background: url("/img/gift-photo-mobile@1x.jpg") no-repeat;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
   background-color: #63a73a;
   background-size: 320px auto;
+  background-position: center;
 }
 
 .intro__text {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .intro__button {
@@ -39,9 +40,15 @@
   font-size: 14px;
   text-transform: uppercase;
   background-color: #63a73a;
-  margin-top: 150px;
+  margin-top: 19px;
   padding: 15px 45px 15px 50px;
   width: 280px;
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+.intro__img {
+  margin-top: -147px;
 }

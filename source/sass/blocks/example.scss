@@ -2,27 +2,29 @@
   background-color: #f2f2f2;
 }
 
+.example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .example__header {
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
-  width: 320px;
-  margin: 0 auto;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  width: 320px;
-  margin: 0 auto;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__weight {
-  width: 320px;
-  margin: 0 auto;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .weight {
@@ -30,16 +32,32 @@
   justify-content: space-between;
 }
 
+.weight__wrapper {
+  width: 50%;
+  position: relative;
+}
+
 .weight__value {
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: bold;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  padding: 12px 14px;
+  &:first-child {
+    margin-right: 10px;
+  }
 }
 
 .weight__text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
+  position: absolute;
+  top: 64px;
+  left: 30px;
+  padding: 0 10px;
+  background-color: #f2f2f2;
 }
 
 .weight__cost {
@@ -47,7 +65,7 @@
   font-size: 14px;
   text-transform: uppercase;
   width: 320px;
-  margin: 0 auto;
+  margin: 22px auto;
   text-align: center;
   font-weight: bold;
 }
@@ -58,8 +76,8 @@
 }
 
 .example__scale {
-  width: 320px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
 }

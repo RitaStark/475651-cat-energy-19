@@ -1,6 +1,6 @@
 .contacts {
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
   padding-left: 20px;
   background: url("/img/bg-map-mobile@1x.png") no-repeat;
   background-position: center;
@@ -8,6 +8,21 @@
 }
 
 .contacts__details {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contacts__invite {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
 }
