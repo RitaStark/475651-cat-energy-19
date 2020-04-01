@@ -1,0 +1,45 @@
+.extra-goods {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.extra-goods__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  padding: 0 0 15px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.extra-goods__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.extra-goods__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #68b738;
+  color: #ddedd6;
+  display: block;
+  text-align: center;
+  padding: 12px 0 13px 0;
+}
+
+.extra-goods__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-goods__details {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.extra-goods__item {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 20px 15px 20px;
+}
