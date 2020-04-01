@@ -1,4 +1,12 @@
-@import "page-header.scss";
+@import "blocks/page-header";
+@import "blocks/intro";
+@import "mixins";
+@import "fonts";
+@import "blocks/purpose";
+@import "blocks/how-works";
+@import "blocks/example";
+@import "blocks/contacts";
+@import "blocks/page-footer";
 
 body {
   background-color: #ffffff;

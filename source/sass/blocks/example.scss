@@ -1,0 +1,65 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__header {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.example__weight {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.weight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weight__value {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weight__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.weight__cost {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.example__pic {
+  display: block;
+  margin: auto;
+}
+
+.example__scale {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
