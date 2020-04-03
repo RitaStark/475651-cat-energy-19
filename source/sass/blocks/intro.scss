@@ -1,0 +1,53 @@
+.intro {
+  // background-color: #63a73a;
+}
+
+.intro__wrapper {
+  padding: 0 20px 0 20px;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.intro__header {
+  width: 320px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 29px 20px 19px 20px;
+}
+
+.intro__container {
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+  background-color: #63a73a;
+  background-size: 320px auto;
+  background-position: center;
+}
+
+.intro__text {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 150px;
+}
+
+.intro__button {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #63a73a;
+  padding: 15px 45px 15px 50px;
+  width: 280px;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+.intro__img {
+  margin-top: -147px;
+}
