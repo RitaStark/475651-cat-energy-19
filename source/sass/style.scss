@@ -1,3 +1,4 @@
+@import "variables";
 @import "blocks/page-header";
 @import "blocks/intro";
 @import "mixins";
@@ -11,7 +12,13 @@
 @import "blocks/show-more";
 @import "blocks/extra-goods";
 @import "blocks/stock";
+@import "blocks/main-nav";
 
 body {
   background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
