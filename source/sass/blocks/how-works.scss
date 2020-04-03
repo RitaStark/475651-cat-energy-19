@@ -24,6 +24,7 @@
 .how-works__item {
   position: relative;
   padding-bottom: 10px;
+
   &::before {
     content: "";
     position: absolute;
@@ -33,6 +34,7 @@
     top: 0;
     left: -84px;
   }
+
   &--leaf::after {
     content: "";
     position: absolute;
@@ -42,6 +44,7 @@
     top: 5px;
     left: -77px;
   }
+
   &--powder::after {
     content: "";
     position: absolute;
@@ -51,6 +54,7 @@
     top: 5px;
     left: -77px;
   }
+
   &--food::after {
     content: "";
     position: absolute;
@@ -60,6 +64,7 @@
     top: 5px;
     left: -77px;
   }
+
   &--time::after {
     content: "";
     position: absolute;
