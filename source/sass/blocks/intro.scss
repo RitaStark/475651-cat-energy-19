@@ -4,14 +4,11 @@
 }
 
 .intro__wrapper {
-  // padding: 0 20px 0 20px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
 }
 
 .intro__header {
-  // width: 320px;
-  // margin: 0 auto;
   color: #ffffff;
   font-size: 36px;
   font-weight: normal;
@@ -43,11 +40,11 @@
   text-decoration: none;
   background-color: #63a73a;
   padding: 15px 45px 15px 50px;
-  width: 280px;
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
-  // display: block;
-  margin: 0 auto;
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .intro__img {
@@ -95,13 +92,17 @@
   .intro {
     width: 1220px;
     margin: 0 auto;
+    // background: url("/img/index-background-desktop@1x.jpg") no-repeat top right;
+    // background-color: #ffffff;
+    // background-position: center;
+    // background-size: cover;
   }
 
   .intro__header {
     color: #111111;
     font-size: 60px;
     text-align: left;
-    padding-right: 200px;
+    padding-right: 685px;
     padding-left: 110px;
     padding-bottom: 0;
     background-color: #ffffff;
