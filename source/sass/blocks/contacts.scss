@@ -34,3 +34,63 @@
   font-size: 14px;
   font-family: "Arial", sans-serif;
 }
+
+.contacts__address br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+  }
+
+  .contacts__details {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 66px;
+    padding-bottom: 59px;
+  }
+
+  .contacts__wrap {
+    &:first-child {
+      margin-right: 210px;
+    }
+  }
+
+  .contacts__invite {
+    font-size: 20px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    text-align: right;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1220px;
+    position: relative;
+  }
+
+  .contacts__details {
+    width: 570px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+  }
+
+  .contacts__map {
+    position: relative;
+  }
+}
