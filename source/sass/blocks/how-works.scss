@@ -4,7 +4,7 @@
 }
 
 .how-works__header {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
 }
@@ -79,6 +79,7 @@
 @media (min-width: $tablet-width) {
   .how-works {
     width: 768px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .how-works__wrapper {
@@ -86,7 +87,7 @@
   }
 
   .how-works__header {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     margin-bottom: 0;
@@ -97,6 +98,7 @@
     padding-left: 0;
     padding-right: 20px;
     margin-top: 63px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
