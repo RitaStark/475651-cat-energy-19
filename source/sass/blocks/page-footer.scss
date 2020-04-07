@@ -1,4 +1,6 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   background-color: #f2f2f2;
 }
 
@@ -16,21 +18,45 @@
 .social-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 25px 0 25px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  &__item {
+    &:nth-child(-n + 2) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.social-list__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   padding: 24px 0 24px 0;
 }
 
 .page-footer__academy {
   font-size: 16px;
   font-family: "Arial", sans-serif;
+}
+
+.page-footer__academy-icon {
+  fill: red;
 }
