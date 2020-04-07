@@ -19,15 +19,14 @@
             alt="Логотип Кэт-Энерджи">
         </picture>
       </a>
-
-      <button class="page-header__toggle" type="button">
-        <img src="img/icon-close.svg" width="19px" height="19px" alt="Значок меню">
-      </button>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button" aria-label="Кнопка закрытия меню">
+        <img src="img/icon-mobile-menu.svg" width="25px" height="19px" alt="Значок закрытия меню">
+      </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
@@ -99,19 +98,24 @@
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день. </p>
-        <div class="example__weight weight">
-          <div class="weight__wrapper">
-            <p class="weight__value">5 кг</p>
-            <p class="weight__text">снижение <br>веса</p>
+        <div class="example__container">
+          <div class="example__weight weight">
+            <div class="weight__wrapper">
+              <p class="weight__value">5 кг</p>
+              <p class="weight__text">снижение веса</p>
+            </div>
+
+            <div class="weight__wrapper">
+              <p class="weight__value">60 дней</p>
+              <p class="weight__text">затрачено времени</p>
+            </div>
           </div>
 
-          <div class="weight__wrapper">
-            <p class="weight__value">60 дней</p>
-            <p class="weight__text">затрачено <br>времени</p>
-          </div>
+
+          <p class="weight__cost">Затраты на питание: 15 000 руб.</p>
+
         </div>
 
-        <p class="weight__cost">Затраты на питание: 15 000 руб.</p>
         <img class="example__pic" src="img/before-mobile@1x.png" alt="Фото трасформаци кота">
         <div class="example__scale">
           <p class="example__before-text">было</p>
