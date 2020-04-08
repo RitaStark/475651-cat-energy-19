@@ -1,3 +1,13 @@
 @mixin font-style {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+@mixin margin-22 {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+@mixin margin-30 {
+  margin-left: 30px;
+  margin-right: 30px;
 }

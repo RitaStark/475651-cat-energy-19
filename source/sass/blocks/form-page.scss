@@ -1,0 +1,68 @@
+.form-page {
+  width: 320px;
+  margin: 0 auto;
+
+  @include font-style;
+}
+
+.form-page__header {
+  @include margin-22;
+}
+
+.form-page__text {
+  @include margin-22;
+  margin-top: 35px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form-page__wrapper {
+  @include margin-22;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .form-page__header {
+    font-size: 60px;
+
+    @include margin-30;
+  }
+
+  .form-page__text {
+    font-size: 20px;
+
+    @include margin-30;
+  }
+
+  .form-page__wrapper {
+    @include margin-30;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form-page__header {
+    margin-left: 0;
+  }
+
+  .form-page__text {
+    margin-left: 0;
+  }
+
+  .form-page__wrapper {
+    margin-left: 0;
+  }
+
+  .form-page__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

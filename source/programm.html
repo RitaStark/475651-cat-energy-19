@@ -27,14 +27,14 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="programm.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--active">
+            <a>Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -47,25 +47,34 @@
     <h2 class="form-page__header">Подбор программы</h2>
     <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-    <form action="https://echo.htmlacademy.ru">
-      <section class="pet-info">
-        <label for="cat-name">Имя:*</label>
-        <input class="pet-info__input" type="text" id="cat-name" name="cat-name" value="Барсик">
+    <form class="form-page__wrapper" action="https://echo.htmlacademy.ru">
+      <div class="form-page__container">
+        <section class="pet-info">
 
-        <label for="cat-weight">Вес(кг):*</label>
-        <input class="pet-info__input" type="text" id="cat-weight" name="cat-weight" value="7">
+          <div class="pet-info__wrap">
+            <label for="cat-name">Имя:*</label>
+            <input class="pet-info__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
+          </div>
 
-        <label for="cat-age">Возраст(лет):*</label>
-        <input class="pet-info__input" type="text" id="cat-age" name="cat-age" value="7">
-      </section>
+          <div class="pet-info__wrap">
+            <label for="cat-weight">Вес(кг):*</label>
+            <input class="pet-info__input" type="text" id="cat-weight" name="cat-weight" placeholder="7"><br>
+          </div>
 
-      <section class="reason">
-        <ul class="reason__list">
-          <li class="reason__item">Похудение</li>
-          <li class="reason__item">Набор массы</li>
-          <li class="reason__item">Не знаю (Нужен ваш совет)</li>
-        </ul>
-      </section>
+          <div class="pet-info__wrap">
+            <label for="cat-age">Возраст(лет):*</label>
+            <input class="pet-info__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+          </div>
+        </section>
+
+        <section class="reason">
+          <ul class="reason__list">
+            <li class="reason__item">Похудение</li>
+            <li class="reason__item">Набор массы</li>
+            <li class="reason__item">Не знаю (Нужен ваш совет)</li>
+          </ul>
+        </section>
+      </div>
 
       <section class="pet-owner-info">
         <label for="pet-owner-mail">e-mail:*</label>

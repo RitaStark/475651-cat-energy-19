@@ -1,0 +1,35 @@
+.form-page__wrapper {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 39px;
+}
+
+.pet-info input[type="text"] {
+  margin-bottom: 14px;
+  padding: 15px 0 15px 16px;
+  flex-grow: 1;
+}
+
+.pet-info__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & label {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pet-info {
+    width: 50%;
+  }
+
+  .reason {
+    width: 50%;
+  }
+
+  .reason__list {
+    list-style: none;
+  }
+}
