@@ -132,3 +132,33 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin: 0;
+    width: 1220px;
+  }
+
+  .catalog-main__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .catalog-main__header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .catalog__list {
+    width: 245px;
+    box-sizing: border-box;
+  }
+
+  .catalog__wrapper {
+    box-sizing: border-box;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
+}
