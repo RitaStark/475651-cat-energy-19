@@ -1,4 +1,4 @@
-.catalog__header {
+.catalog-main__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   width: 280px;
@@ -7,11 +7,15 @@
   padding-bottom: 36px;
 }
 
-.catalog__wrapper {
+.catalog {
   width: 320px;
   margin: 0 auto;
+}
+
+.catalog__wrapper {
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -42,8 +46,119 @@
 
 .catalog__details {
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.catalog__table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-elem__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__table tbody {
+  width: 100%;
 }
 
 .table-elem__value {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog-main__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog-main__header {
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 60px;
+  }
+
+  .catalog__list {
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    margin-bottom: 140px;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+
+  .catalog__button {
+    width: 250px;
+  }
+
+  .catalog__item-name {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .catalog__details {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-elem__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__table {
+    & td {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin: 0;
+    width: 1220px;
+  }
+
+  .catalog-main__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .catalog-main__header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .catalog__list {
+    width: 245px;
+    box-sizing: border-box;
+  }
+
+  .catalog__wrapper {
+    box-sizing: border-box;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
 }

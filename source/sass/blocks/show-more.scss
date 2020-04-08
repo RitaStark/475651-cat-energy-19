@@ -7,6 +7,10 @@
   font-size: 16px;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
+
+  & br {
+    display: none;
+  }
 }
 
 .show-more__wrapper {
@@ -19,6 +23,10 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   margin-bottom: 20px;
+
+  & br {
+    display: none;
+  }
 }
 
 .show-more__button {
@@ -32,4 +40,48 @@
   padding-bottom: 12px;
   display: block;
   margin: 0 20px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 140px;
+  }
+
+  .show-more__wrapper {
+    margin-bottom: 0;
+    margin-top: 55px;
+  }
+
+  .show-more__button {
+    margin-top: 104px;
+  }
+
+  .show-more__header {
+    margin-top: 50px;
+    font-size: 20px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .show-more__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more__wrapper {
+    width: auto;
+  }
 }

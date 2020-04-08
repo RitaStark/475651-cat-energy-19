@@ -1,0 +1,136 @@
+.main-nav__list {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  padding-left: 0;
+}
+
+.page-header__wrapper {
+  position: relative;
+}
+
+.main-nav {
+  // position: relative;
+  padding: 0;
+  list-style: none;
+
+  &__toggle {
+    position: absolute;
+    border: none;
+    background-color: #ffffff;
+    top: 10px;
+    right: 20px;
+    width: 25px;
+    height: 19px;
+  }
+
+  img {
+    display: block;
+    // margin-top: 20px;
+    width: 25px;
+    height: 19px;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before {
+    content: "";
+    background: url("/img/icon-close.svg") no-repeat;
+    background-position: center;
+    background-size: 19px 19px;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left: 0;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.site-list__item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+    margin-left: 15px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &--active {
+      border-top: none;
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    img {
+      display: none;
+    }
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    &::before {
+      display: none;
+    }
+  }
+}
