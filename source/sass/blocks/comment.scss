@@ -1,0 +1,21 @@
+.comment {
+  margin-bottom: 31px;
+}
+
+.comment__header {
+  font-size: 24px;
+  text-transform: none;
+}
+
+.comment textarea {
+  text-transform: uppercase;
+  resize: vertical;
+  min-height: 148px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 708px;
+  }
+}

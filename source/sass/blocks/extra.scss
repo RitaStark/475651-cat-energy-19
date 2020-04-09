@@ -1,0 +1,94 @@
+.extra__header {
+  font-size: 24px;
+  margin-bottom: 39px;
+  text-transform: none;
+}
+
+.extra__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.extra__item {
+  font-size: 16px;
+  margin-bottom: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    left: 0;
+  }
+
+  & label {
+    padding-left: 66px;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.food__check:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("/img/icon-tick.svg") no-repeat;
+  background-position: center;
+  background-size: 22px 17px;
+  left: 0;
+}
+
+.send-form {
+  margin-bottom: 34px;
+}
+
+.send-form__button {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  padding: 13px 0 17px 0;
+  margin-top: 34px;
+}
+
+.send-form__text {
+  text-transform: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra__item {
+    margin-right: 80px;
+  }
+
+  .send-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .send-form__button {
+    width: 50%;
+    margin-right: 61px;
+  }
+
+  .send-form__text {
+    width: 50%;
+    text-align: left;
+  }
+}
