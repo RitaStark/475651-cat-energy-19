@@ -76,17 +76,25 @@
         </section>
       </div>
 
-      <section class="pet-owner-info">
-        <label for="pet-owner-mail">e-mail:*</label>
-        <input class="pet-owner-info__input" type="text" id="pet-owner-mail" name="pet-owner-mail"
-          value="kuklachev@gmail.com">
+      <section class="pet-owner">
+        <h3 class="pet-owner__header">Контактные данные (владельца кота)</h3>
+        <div class="pet-owner__container">
+          <div class="pet-owner__wrap">
+            <label for="pet-owner__mail">e-mail:*</label>
+            <input class="pet-owner__input" type="text" id="pet-owner-mail" name="pet-owner-mail"
+              placeholder="kuklachev@gmail.com">
+          </div>
 
-        <label for="pet-owner-tel">телефон:*</label>
-        <input class="pet-owner-info__input" type="text" id="pet-owner-tel" name="pet-owner-tel"
-          value="8 (960) 900-60-90">
+          <div class="pet-owner__wrap">
+            <label for="pet-owner__tel">телефон:*</label>
+            <input class="pet-owner__input" type="text" id="pet-owner-tel" name="pet-owner-tel"
+              placeholder="8 (960) 900-60-90">
+          </div>
+        </div>
       </section>
 
       <section class="comment">
+        <h3 class="comment__header"> Комментарий</h3>
         <textarea class="comment__text">Расскажите обо всех повадках кота</textarea>
       </section>
 
