@@ -172,5 +172,11 @@
 @media (min-width: $desktop-width) {
   .how-works {
     width: 1220px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
+
+  .how-works__wrapper {
+    margin-left: 0;
   }
 }

@@ -1,6 +1,12 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
+
+  & iframe {
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+  }
 }
 
 .contacts__map {
@@ -16,7 +22,7 @@
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .contacts__wrap {
@@ -46,11 +52,7 @@
   }
 
   .contacts__details {
-    // margin-left: 70px;
-    padding-right: 37px;
-    padding-top: 66px;
-    padding-bottom: 59px;
-    padding-left: 71px;
+    padding: 66px 37px 59px 71px;
   }
 
   .contacts__wrap {
@@ -61,7 +63,6 @@
 
   .contacts__invite {
     font-size: 20px;
-    // padding-left: 20px;
   }
 
   .contacts__address {

@@ -93,33 +93,44 @@
     </section>
 
     <section class="example">
+      <h3 class="example__header">Живой пример</h3>
       <div class="example__wrapper">
-        <h3 class="example__header">Живой пример</h3>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день. </p>
-        <div class="example__container">
-          <div class="example__weight weight">
-            <div class="weight__wrapper">
-              <p class="weight__value">5 кг</p>
-              <p class="weight__text">снижение веса</p>
-            </div>
 
-            <div class="weight__wrapper">
-              <p class="weight__value">60 дней</p>
-              <p class="weight__text">затрачено времени</p>
+
+        <div class="example__part">
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день. </p>
+          <div class="example__container">
+            <div class="example__weight weight">
+              <div class="weight__wrapper">
+                <p class="weight__value">5 кг</p>
+                <p class="weight__text">снижение веса</p>
+              </div>
+
+              <div class="weight__wrapper">
+                <p class="weight__value">60 дней</p>
+                <p class="weight__text">затрачено времени</p>
+              </div>
             </div>
+            <p class="weight__cost">Затраты на питание: 15 000 руб.</p>
           </div>
-
-
-          <p class="weight__cost">Затраты на питание: 15 000 руб.</p>
-
         </div>
 
-        <img class="example__pic" src="img/before-mobile@1x.png" alt="Фото трасформаци кота">
-        <div class="example__scale">
-          <p class="example__before-text">было</p>
-          <p class="example__after-text">стало</p>
+        <div class="example__part">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img class="example__pic" src="img/before-mobile@1x.png" alt="Фото трасформаци кота">
+          </picture>
+
+
+          <div class="example__scale">
+            <p class="example__before-text">было</p>
+            <div class="example__measurement-scale"></div>
+            <div class="example__button"></div>
+            <p class="example__after-text">стало</p>
+          </div>
         </div>
       </div>
     </section>
@@ -134,7 +145,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <!-- <iframe src="" frameborder="0"></iframe> -->
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGSURU1c" width="560" height="400"></iframe>
         <!-- <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="#" height="#" alt="Изображение карты"> -->
       </div>
     </section>
