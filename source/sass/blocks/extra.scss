@@ -65,6 +65,10 @@ input[type="checkbox"] {
 }
 
 @media (min-width: $tablet-width) {
+  .extra {
+    @include tablet-margin;
+  }
+
   .extra__list {
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +84,8 @@ input[type="checkbox"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include tablet-margin;
   }
 
   .send-form__button {

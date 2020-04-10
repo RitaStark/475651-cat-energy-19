@@ -17,5 +17,13 @@
 @media (min-width: $tablet-width) {
   .comment {
     width: 708px;
+
+    @include tablet-margin;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    width: 1220px;
   }
 }

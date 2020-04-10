@@ -26,6 +26,8 @@
 @media (min-width: $tablet-width) {
   .pet-owner {
     border-bottom: none;
+
+    @include tablet-margin;
   }
 }
 

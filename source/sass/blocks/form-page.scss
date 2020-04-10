@@ -35,8 +35,9 @@
 
   .form-page__text {
     font-size: 20px;
+    margin-left: 71px;
 
-    @include margin-30;
+    // @include margin-30;
   }
 
   .form-page__wrapper {
@@ -50,16 +51,11 @@
     margin: 0 auto;
   }
 
-  .form-page__header {
-    margin-left: 0;
-  }
-
-  .form-page__text {
-    margin-left: 0;
-  }
-
+  .form-page__header,
+  .form-page__text,
   .form-page__wrapper {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .form-page__container {

@@ -29,6 +29,14 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .pet-info {
+    border-bottom: none;
+
+    @include tablet-margin;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .pet-info {
     width: 50%;
