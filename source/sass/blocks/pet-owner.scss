@@ -32,6 +32,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .pet-owner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .pet-owner__container {
     display: flex;
     justify-content: space-between;

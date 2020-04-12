@@ -86,6 +86,11 @@
     position: relative;
   }
 
+  .contacts__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .contacts__details {
     width: 570px;
     display: flex;
@@ -96,7 +101,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 150px;
     z-index: 1;
   }
 

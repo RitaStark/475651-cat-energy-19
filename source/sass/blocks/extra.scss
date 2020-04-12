@@ -98,3 +98,8 @@ input[type="checkbox"] {
     text-align: left;
   }
 }
+@media (min-width: $desktop-width) {
+  .extra {
+    margin-left: 0;
+  }
+}
