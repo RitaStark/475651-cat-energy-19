@@ -92,10 +92,7 @@
   .intro {
     width: 1220px;
     margin: 0 auto;
-    // background: url("/img/index-background-desktop@1x.jpg") no-repeat top right;
-    // background-color: #ffffff;
-    // background-position: center;
-    // background-size: cover;
+    // position: relative;
   }
 
   .intro__header {
@@ -103,8 +100,26 @@
     font-size: 60px;
     text-align: left;
     padding-right: 685px;
-    padding-left: 110px;
+    padding-left: 81px;
     padding-bottom: 0;
     background-color: #ffffff;
+  }
+
+  .intro__text {
+    padding-left: 81px;
+  }
+
+  .intro__button {
+    margin-top: -130px;
+    margin-bottom: 278px;
+    margin-left: 81px;
+    padding: 17px 0 15px 0;
+  }
+
+  .intro__img {
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 635px;
   }
 }
