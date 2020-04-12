@@ -134,3 +134,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item--desktop-main {
+    & a {
+      color: #ffffff;
+      font-weight: 400;
+    }
+  }
+
+  .site-list__item--border {
+    border-bottom: 2px solid #ffffff;
+  }
+}
