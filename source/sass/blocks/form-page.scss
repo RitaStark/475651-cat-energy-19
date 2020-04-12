@@ -1,59 +1,76 @@
 .form-page {
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
 
   @include font-style;
 }
 
+.form-page__head {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form-page__header {
-  @include margin-22;
   font-size: 36px;
 }
 
 .form-page__text {
-  @include margin-22;
   margin-top: 35px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .form-page__wrapper {
-  @include margin-22;
+  width: 280px;
+  margin: 0 auto;
+  // @include margin-22;
 }
 
 @media (min-width: $tablet-width) {
-  .form-page {
-    width: 768px;
+  // .form-page {
+  //   width: 768px;
+  //   margin: 0 auto;
+  // }
+
+  .form-page__head {
+    width: 708px;
     margin: 0 auto;
   }
 
   .form-page__header {
     font-size: 60px;
-
-    @include margin-30;
   }
 
   .form-page__text {
     font-size: 20px;
-    margin-left: 71px;
 
-    // @include margin-30;
+    @include tablet-margin;
   }
 
   .form-page__wrapper {
-    @include margin-30;
+    width: 708px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-page {
+  // .form-page {
+  //   width: 1220px;
+  //   margin: 0 auto;
+  // }
+
+  .form-page__head {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form-page__wrapper {
     width: 1220px;
     margin: 0 auto;
   }
 
   .form-page__header,
-  .form-page__text,
-  .form-page__wrapper {
+  .form-page__text {
     margin-left: 0;
     margin-right: 0;
   }
