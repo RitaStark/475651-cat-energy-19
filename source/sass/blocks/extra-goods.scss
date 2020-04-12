@@ -1,7 +1,6 @@
 .extra-goods {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
 }
 
 .extra-goods__header {
@@ -52,7 +51,8 @@
   }
 
   .extra-goods__header {
-    padding-left: 38px;
+    @include margin-30;
+    padding-left: 0;
     font-size: 36px;
     border-bottom: none;
   }
@@ -62,6 +62,7 @@
     padding-right: 0;
     padding-bottom: 28px;
     border: 1px solid #cdcdcd;
+    @include margin-30;
   }
 
   .extra-goods__name {

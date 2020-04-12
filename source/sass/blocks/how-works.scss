@@ -87,7 +87,6 @@
   }
 
   .how-works__header {
-    // text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     margin-bottom: 0;
@@ -174,9 +173,14 @@
     width: 1220px;
     margin: 0 auto;
     border-bottom: none;
+
+    &__list {
+      padding-right: 0;
+    }
   }
 
   .how-works__wrapper {
+    margin-right: 0;
     margin-left: 0;
   }
 }
