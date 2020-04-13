@@ -59,15 +59,18 @@
     margin: 0 auto;
   }
 
+  .intro__wrapper {
+    margin-bottom: 528px;
+  }
+
   .intro__header {
     color: #111111;
     font-size: 60px;
     text-align: left;
-    padding-right: 200px;
-    padding-left: 120px;
-    padding-bottom: 0;
+    padding: 0 200px 0 120px;
     background-color: #ffffff;
-    margin-bottom: 33px;
+    margin-bottom: 66px;
+    margin-top: 43px;
   }
 
   .intro__text {
@@ -75,6 +78,7 @@
     font-size: 20px;
     text-transform: uppercase;
     padding-left: 120px;
+    padding-bottom: 0;
   }
 
   .intro__container {
@@ -85,8 +89,11 @@
 
   .intro__button {
     width: 245px;
-    margin-left: 120px;
     display: block;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: -62px;
+    padding: 14px 0;
   }
 }
 

@@ -92,6 +92,7 @@
 
   .how-works__wrapper {
     @include margin-30;
+    margin-top: 40px;
   }
 
   .how-works__header {
@@ -100,11 +101,17 @@
     margin-bottom: 0;
   }
 
+  .how-works__text {
+    margin-left: 0;
+    margin-top: -5px;
+    line-height: 24px;
+  }
+
   .how-works__list {
     list-style-type: none;
     padding-left: 0;
     padding-right: 20px;
-    margin-top: 63px;
+    margin-top: 66px;
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -113,12 +120,11 @@
 
   .how-works__item {
     position: relative;
-    padding-bottom: 0;
-    margin-bottom: 100px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     max-width: 255px;
-    padding-top: 117px;
+    padding: 117px 50px 0 0;
+    margin-bottom: 115px;
 
     &::before {
       content: "";
@@ -152,26 +158,34 @@
       left: 20px;
     }
 
-    &--food::after {
-      content: "";
-      position: absolute;
-      background: url("/img/advantage-dining@1x.png") no-repeat;
-      background-position: center;
-      height: 46px;
-      width: 42px;
-      top: 15px;
-      left: 20px;
+    &--food {
+      margin-bottom: 88px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("/img/advantage-dining@1x.png") no-repeat;
+        background-position: center;
+        height: 46px;
+        width: 42px;
+        top: 15px;
+        left: 20px;
+      }
     }
 
-    &--time::after {
-      content: "";
-      position: absolute;
-      background: url("/img/advantage-clock@1x.png") no-repeat;
-      background-position: center;
-      height: 46px;
-      width: 42px;
-      top: 15px;
-      left: 20px;
+    &--time {
+      margin-bottom: 88px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("/img/advantage-clock@1x.png") no-repeat;
+        background-position: center;
+        height: 46px;
+        width: 42px;
+        top: 15px;
+        left: 20px;
+      }
     }
   }
 }
