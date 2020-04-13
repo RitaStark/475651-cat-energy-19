@@ -58,8 +58,7 @@
   .contacts__details {
     width: 625px;
     margin: 0 auto;
-    padding: 66px 45px 59px 53px;
-    // @include margin-30;
+    padding: 42px 45px 45px 45px;
   }
 
   .contacts__wrap {
@@ -70,6 +69,8 @@
 
   .contacts__invite {
     font-size: 20px;
+    line-height: 25px;
+    padding-right: 27px;
   }
 
   .contacts__address {

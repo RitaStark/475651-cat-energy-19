@@ -129,7 +129,7 @@
 @media (min-width: $tablet-width) {
   .example {
     width: auto;
-    background: linear-gradient(to top, #f2f2f2 50%, #ffffff 50%);
+    background: linear-gradient(to top, #f2f2f2 45%, #ffffff 45%);
   }
 
   .example__main-wrap {
@@ -139,6 +139,7 @@
 
   .example__wrapper {
     @include margin-30;
+    padding-bottom: 8px;
   }
 
   .example__header {
@@ -148,6 +149,14 @@
     margin-left: 30px;
     padding-left: 0;
     font-size: 60px;
+  }
+
+  .example__part {
+    margin-bottom: 20px;
+
+    &:first-child {
+      padding-bottom: 142px;
+    }
   }
 
   .example__text {
@@ -163,12 +172,22 @@
     justify-content: space-between;
   }
 
+  .example__pic {
+    margin-top: -107px;
+  }
+
   .weight__wrapper {
     margin-right: 30px;
   }
 
   .weight__value {
     font-size: 30px;
+    padding: 18px 0;
+    margin-right: 21px;
+
+    &:nth-child(2) {
+      margin-right: 23px;
+    }
   }
 
   .weight__cost {
@@ -176,18 +195,17 @@
     font-family: "Oswald", "Arial", sans-serif;
     text-align: right;
     font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 22px 0 0 0;
     width: 26%;
   }
 
   .weight__text {
     font-size: 14px;
     background-color: #ffffff;
-    padding: 0 12px;
-    margin-right: -7px;
-    margin-left: -16px;
+    padding: 0 9px;
+    margin-top: 29px;
   }
 
   .example__weight {
@@ -199,13 +217,19 @@
 
   .example__scale {
     background-color: #f2f2f2;
-    padding-top: 50px;
+    margin-top: 7px;
   }
 
   .example__before-text,
   .example__after-text {
     border-bottom: 1px dotted #dcdcdc;
     padding-bottom: 6px;
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .example__before-text {
+    margin-right: 17px;
   }
 
   .example__measurement-scale {
@@ -233,6 +257,8 @@
       background-color: #ffffff;
       top: 7px;
       left: 50%;
+
+      transform: translateX(-50%);
     }
   }
 
@@ -247,7 +273,7 @@
       border-radius: 50%;
       background-color: #68b738;
       top: 19px;
-      left: -220px;
+      left: -238px;
     }
   }
 }

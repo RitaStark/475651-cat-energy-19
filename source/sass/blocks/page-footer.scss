@@ -69,7 +69,7 @@
 }
 
 .page-footer__academy-icon {
-  fill: red;
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,6 +78,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 21px;
   }
 
   .page-footer__logo {
@@ -92,6 +93,9 @@
 
   .social-list {
     align-items: center;
+    border-top: none;
+    margin-left: 65px;
+    margin-top: 10px;
   }
 
   .social-list__icon {
@@ -109,6 +113,12 @@
       width: 14px;
       height: 28px;
     }
+  }
+
+  .page-footer__academy-icon {
+    width: 40px;
+    height: 43px;
+    text-align: right;
   }
 }
 
