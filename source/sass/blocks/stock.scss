@@ -1,14 +1,30 @@
 .stock {
   width: 320px;
+  min-height: 289px;
   margin: 0 auto;
   background: url("/img/gift-photo-mobile@1x.jpg") no-repeat;
-  background-size: 280px 400px;
   background-position: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("/img/icon-gift.svg") no-repeat;
+    width: 56px;
+    height: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px;
+    color: red;
+  }
 }
 
 .stock__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
   text-align: center;
-  padding-left: 20px;
+  padding: 180px 78px 0 78px;
+  color: #ffffff;
 }
 
 .stock__text p {
@@ -20,6 +36,7 @@
     width: 30%;
     margin-top: 123px;
     padding-right: 0;
+    position: relative;
   }
 
   .stock__text {

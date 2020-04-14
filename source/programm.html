@@ -11,7 +11,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -21,20 +21,20 @@
       </a>
     </div>
 
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Кнопка закрытия меню">
         <img src="img/icon-mobile-menu.svg" width="25px" height="19px" alt="Значок закрытия меню">
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="programm.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--active">
+            <a>Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -43,50 +43,89 @@
 
 
   <main class="form-page">
+    <div class="form-page__head">
+      <h2 class="form-page__header">Подбор программы</h2>
+      <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
+    <form class="form-page__wrapper" action="https://echo.htmlacademy.ru">
+      <div class="form-page__container">
+        <section class="pet-info">
 
-    <h2 class="form-page__header">Подбор программы</h2>
-    <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <div class="pet-info__wrap">
+            <label for="cat-name">Имя:*</label>
+            <input class="pet-info__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
+          </div>
 
-    <form action="https://echo.htmlacademy.ru">
-      <section class="pet-info">
-        <label for="cat-name">Имя:*</label>
-        <input class="pet-info__input" type="text" id="cat-name" name="cat-name" value="Барсик">
+          <div class="pet-info__wrap">
+            <label for="cat-weight">Вес(кг):*</label>
+            <input class="pet-info__input" type="text" id="cat-weight" name="cat-weight" placeholder="7"><br>
+          </div>
 
-        <label for="cat-weight">Вес(кг):*</label>
-        <input class="pet-info__input" type="text" id="cat-weight" name="cat-weight" value="7">
+          <div class="pet-info__wrap">
+            <label for="cat-age">Возраст(лет):*</label>
+            <input class="pet-info__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+          </div>
+        </section>
 
-        <label for="cat-age">Возраст(лет):*</label>
-        <input class="pet-info__input" type="text" id="cat-age" name="cat-age" value="7">
-      </section>
+        <section class="reason">
+          <ul class="reason__list">
+            <li class="reason__item">
+              <input type="radio" value="похудение" id="weight-less" name="reason" class="reasons__radio" checked="">
+              <label for="weight-less">Похудение</label>
+            </li>
+            <li class="reason__item">
+              <input type="radio" value="набор массы" id="mass-gain" name="reason" class="reasons__radio" checked="">
+              <label for="mass-gain">Набор массы</label>
+            </li>
+            <li class="reason__item">
+              <input type="radio" value="совет" id="advice" name="reason" class="reasons__radio" checked="">
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <section class="reason">
-        <ul class="reason__list">
-          <li class="reason__item">Похудение</li>
-          <li class="reason__item">Набор массы</li>
-          <li class="reason__item">Не знаю (Нужен ваш совет)</li>
-        </ul>
-      </section>
+      <section class="pet-owner">
+        <h3 class="pet-owner__header">Контактные данные (владельца кота)</h3>
+        <div class="pet-owner__container">
+          <div class="pet-owner__wrap">
+            <label for="pet-owner__mail">e-mail:*</label>
+            <input class="pet-owner__input" type="text" id="pet-owner-mail" name="pet-owner-mail"
+              placeholder="kuklachev@gmail.com">
+          </div>
 
-      <section class="pet-owner-info">
-        <label for="pet-owner-mail">e-mail:*</label>
-        <input class="pet-owner-info__input" type="text" id="pet-owner-mail" name="pet-owner-mail"
-          value="kuklachev@gmail.com">
-
-        <label for="pet-owner-tel">телефон:*</label>
-        <input class="pet-owner-info__input" type="text" id="pet-owner-tel" name="pet-owner-tel"
-          value="8 (960) 900-60-90">
+          <div class="pet-owner__wrap">
+            <label for="pet-owner__tel">телефон:*</label>
+            <input class="pet-owner__input" type="text" id="pet-owner-tel" name="pet-owner-tel"
+              placeholder="8 (960) 900-60-90">
+          </div>
+        </div>
       </section>
 
       <section class="comment">
+        <h3 class="comment__header"> Комментарий</h3>
         <textarea class="comment__text">Расскажите обо всех повадках кота</textarea>
       </section>
 
       <section class="extra">
+        <h3 class="extra__header"> Дополнительно</h3>
         <ul class="extra__list">
-          <li class="extra__item">Сахарозаменитель</li>
-          <li class="extra__item">Питьевая вода</li>
-          <li class="extra__item">Молоко</li>
-          <li class="extra__item">Витамины</li>
+          <li class="extra__item">
+            <input type="checkbox" id="sugar" value="notsugar" name="food-type" class="food__check" checked="">
+            <label for="sugar">Сахарозаменитель</label>
+          </li>
+          <li class="extra__item">
+            <input type="checkbox" id="water" value="water" name="food-type" class="food__check" checked="">
+            <label for="water">Питьевая вода</label>
+          </li>
+          <li class="extra__item">
+            <input type="checkbox" id="milk" value="milk" name="food-type" class="food__check" checked="">
+            <label for="milk">Молоко</label>
+          </li>
+          <li class="extra__item">
+            <input type="checkbox" id="vitamin" value="vitamin" name="food-type" class="food__check" checked="">
+            <label for="vitamin">Витамины</label>
+          </li>
         </ul>
       </section>
 
@@ -98,12 +137,20 @@
     </form>
 
     <section class="contacts">
-      <div class="contacts__details">
-        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__container contacts__bg">
+        <div class="contacts__details">
+          <div class="contacts__wrap">
+            <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
+          </div>
+          <div class="contacts__wrap">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+          </div>
+        </div>
       </div>
-      <!-- <iframe src="" frameborder="0"></iframe> -->
-      <img class="contacts__map" src="#" width="#" height="#" alt="Изображение карты">
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGSURU1c" width="560" height="400"></iframe>
+        <!-- <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="#" height="#" alt="Изображение карты"> -->
+      </div>
     </section>
 
   </main>
@@ -176,6 +223,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>
 

@@ -1,0 +1,47 @@
+.pet-info {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 23px;
+}
+
+.form-page__wrapper {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 39px;
+}
+
+.pet-info input[type="text"] {
+  margin-bottom: 14px;
+  padding: 15px 0 15px 16px;
+  flex-grow: 1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pet-info__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & label {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pet-info {
+    border-bottom: none;
+
+    @include tablet-margin;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pet-info {
+    width: 50%;
+    border-bottom: none;
+    margin-right: 80px;
+    margin-left: 0;
+  }
+}

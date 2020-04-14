@@ -77,6 +77,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include margin-30;
   }
 
   .catalog-main__container {

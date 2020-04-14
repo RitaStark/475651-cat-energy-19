@@ -11,7 +11,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -21,7 +21,7 @@
       </a>
     </div>
 
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Кнопка закрытия меню">
         <img src="img/icon-mobile-menu.svg" width="25px" height="19px" alt="Значок закрытия меню">
       </button>
@@ -289,12 +289,20 @@
     </div>
 
     <section class="contacts">
-      <div class="contacts__details">
-        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__container contacts__bg">
+        <div class="contacts__details">
+          <div class="contacts__wrap">
+            <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
+          </div>
+          <div class="contacts__wrap">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+          </div>
+        </div>
       </div>
-      <!-- <iframe src="" frameborder="0"></iframe> -->
-
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGSURU1c" width="560" height="400"></iframe>
+        <!-- <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="#" height="#" alt="Изображение карты"> -->
+      </div>
     </section>
 
   </main>
@@ -365,6 +373,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
