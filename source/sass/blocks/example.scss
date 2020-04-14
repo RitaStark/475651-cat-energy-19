@@ -299,7 +299,7 @@
 @media (min-width: $desktop-width) {
   .example {
     width: auto;
-    background: linear-gradient(to top, #f2f2f2 80%, #ffffff 50%);
+    background: linear-gradient(to top, #f2f2f2 74%, #ffffff 50%);
   }
 
   .example__main-wrap {
@@ -353,6 +353,12 @@
     width: 328px;
     text-align: left;
     margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__cost-price {
+    margin-top: 18px;
   }
 
   .weight__text {
