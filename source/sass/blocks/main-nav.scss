@@ -12,6 +12,7 @@
 
 .page-header__wrapper {
   position: relative;
+  margin-bottom: -9px;
 }
 
 .main-nav {
@@ -53,7 +54,7 @@
     width: 19px;
     height: 19px;
     top: 0;
-    left: 0;
+    left: 9px;
   }
 
   img {
@@ -76,11 +77,15 @@
 
 .site-list__item {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #e6e6e6;
 
   &:first-child {
     border-top: 1px solid #e6e6e6;
+  }
+
+  &:last-child {
+    margin-bottom: -29px;
   }
 
   a {

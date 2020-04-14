@@ -115,13 +115,17 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  width: 320px;
-  margin: 10px auto 33px auto;
+  width: 187px;
+  margin: -5px auto 21px auto;
   text-align: center;
   font-weight: bold;
 
   display: flex;
   justify-content: space-between;
+}
+
+.example__cost {
+  // margin-top: -5px;
 }
 
 .example__pic {
