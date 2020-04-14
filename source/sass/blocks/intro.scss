@@ -104,13 +104,15 @@
     // position: relative;
   }
 
+  .intro__wrapper {
+    margin-bottom: 0;
+  }
+
   .intro__header {
     color: #111111;
     font-size: 60px;
     text-align: left;
-    padding-right: 685px;
-    padding-left: 81px;
-    padding-bottom: 0;
+    padding: 53px 685px 0 81px;
     background-color: #ffffff;
   }
 
@@ -119,7 +121,7 @@
   }
 
   .intro__button {
-    margin-top: -130px;
+    margin-top: 51px;
     margin-bottom: 278px;
     margin-left: 81px;
     padding: 17px 0 15px 0;

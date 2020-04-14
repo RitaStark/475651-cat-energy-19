@@ -110,7 +110,7 @@
   background-color: #f2f2f2;
 }
 
-.weight__cost {
+.example__cost-block {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -119,6 +119,9 @@
   margin: 10px auto 33px auto;
   text-align: center;
   font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__pic {
@@ -190,7 +193,7 @@
     }
   }
 
-  .weight__cost {
+  .example__cost-block {
     text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     text-align: right;
@@ -291,7 +294,8 @@
   }
 
   .example__header {
-    margin-bottom: 17px;
+    margin-bottom: 0;
+    margin-top: -35px;
   }
 
   .example__container {
@@ -301,12 +305,17 @@
     flex-direction: column;
   }
 
+  .example__scale {
+    margin-top: 27px;
+    margin-right: -79px;
+  }
+
   .example__text,
   .example__container,
   .example__header,
   .example__wrapper,
   .example__weight,
-  .weight__cost {
+  .example__cost {
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
@@ -316,34 +325,59 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: linear-gradient(to top, #f2f2f2 69%, #ffffff 50%);
+    background: linear-gradient(to top, #f2f2f2 67%, #ffffff 50%);
     margin-top: -160px;
   }
 
   .example__weight {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 7px;
   }
 
-  .weight__cost {
-    min-width: 307px;
+  .example__cost-block {
+    width: 328px;
     text-align: left;
+    margin-top: 0;
   }
 
   .weight__text {
     background-color: #f2f2f2;
     padding: 0 10px;
-    margin-top: 5px;
-    margin-left: 24px;
+    margin-top: 28px;
+    margin-left: 27px;
     left: 0;
   }
 
+  .weight__wrapper {
+    &:first-child {
+      margin-right: 6px;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+
   .example__text {
-    padding-right: 171px;
-    margin-bottom: 71px;
+    padding-right: 152px;
+    margin-bottom: 59px;
+    margin-top: 300px;
   }
 
   .example__part {
     align-self: flex-end;
+
+    &:first-child {
+      padding-bottom: 26px;
+    }
+
+    &:last-child {
+      margin-top: -25px;
+    }
+  }
+
+  img.example__pic {
+    margin-top: -625px;
+    margin-right: -42px;
   }
 }

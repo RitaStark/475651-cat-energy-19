@@ -198,7 +198,7 @@
 @media (min-width: $desktop-width) {
   .purpose {
     width: 1220px;
-    margin-top: 80px;
+    margin-top: -12px;
     display: flex;
     justify-content: space-between;
   }
@@ -206,30 +206,31 @@
   .purpose__item {
     margin-left: 0;
     margin-right: 0;
+    width: 50%;
 
     &:first-child {
-      margin-right: 50px;
+      margin-right: 78px;
     }
 
     &--lose-weight {
       &::after {
-        content: "";
-        position: absolute;
+        // content: "";
+        // position: absolute;
         width: 100px;
         height: 100px;
-        border-radius: 50%;
-        background-color: #68b738;
+        // border-radius: 50%;
+        // background-color: #68b738;
         top: 47px;
         left: 52px;
       }
 
       &::before {
-        content: "";
-        position: absolute;
-        background: url("/img/icon-cat-slim.svg") no-repeat;
+        // content: "";
+        // position: absolute;
+        // background: url("/img/icon-cat-slim.svg") no-repeat;
         height: 97px;
         width: 71px;
-        z-index: 1;
+        // z-index: 1;
         left: 68px;
         top: 43px;
       }
@@ -237,25 +238,25 @@
 
     &--mass-gain {
       &::after {
-        content: "";
-        position: absolute;
+        // content: "";
+        // position: absolute;
         width: 100px;
         height: 100px;
-        border-radius: 50%;
-        background-color: #68b738;
+        // border-radius: 50%;
+        // background-color: #68b738;
         top: 47px;
         left: 52px;
       }
 
       &::before {
-        content: "";
-        position: absolute;
-        background: url("/img/icon-cat-pro.svg") no-repeat;
+        // content: "";
+        // position: absolute;
+        // background: url("/img/icon-cat-pro.svg") no-repeat;
         height: 57px;
         width: 134px;
         z-index: 1;
-        left: 25px;
-        top: 72px;
+        left: 36px;
+        top: 71px;
       }
     }
   }
@@ -263,7 +264,7 @@
   .target__header {
     font-family: "Oswald", "Arial", sans-serif;
     padding-left: 216px;
-    padding-top: 81px;
+    padding-top: 76px;
     text-transform: uppercase;
     font-size: 36px;
     margin-bottom: 0;
@@ -273,13 +274,14 @@
   .target__text {
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    margin: 50px 0 0 52px;
+    margin: 71px 0 0 52px;
     padding-bottom: 0;
-    padding-right: 56px;
+    padding-right: 74px;
     border-bottom: none;
   }
 
   .target__details {
     margin-bottom: 0;
+    margin-top: 30px;
   }
 }
