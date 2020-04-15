@@ -162,6 +162,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    padding-right: 0;
+  }
+
   .site-list__item--desktop-main {
     & a {
       color: #ffffff;
@@ -171,6 +175,7 @@
 
   .site-list__item {
     // border-bottom: 2px solid #ffffff;
+    font-size: 20px;
 
     &--border {
       border-top: none;
@@ -182,7 +187,7 @@
         height: 2px;
         width: 100%;
         background-color: #ffffff;
-        top: 54px;
+        top: 58px;
         left: 0;
       }
     }
