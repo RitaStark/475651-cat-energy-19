@@ -4,7 +4,8 @@
   width: 280px;
   margin: 0 auto;
   // padding-left: 20px;
-  padding-bottom: 36px;
+  padding-bottom: 38px;
+  padding-top: 47px;
 }
 
 .catalog {
@@ -13,7 +14,7 @@
 }
 
 .catalog__wrapper {
-  padding-top: 10px;
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,26 +22,32 @@
 
 .catalog__list {
   border-top: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+
+.catalog__pic {
+  margin-left: 20px;
 }
 
 .catalog__item-name {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .catalog__button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   width: 280px;
-  margin: 25px auto 25px auto;
+  margin: 0 auto 16px auto;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   background-color: #68b738;
   color: #ffffff;
   border: none;
-  padding: 12px 0 13px 0;
+  padding: 12px 0 10px 0;
   display: block;
 }
 
@@ -60,6 +67,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
 }
 
 .catalog__table tbody {
