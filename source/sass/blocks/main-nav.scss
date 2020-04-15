@@ -98,9 +98,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     padding-right: 30px;
-    font-size: 18px;
     font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
   }
 
   .main-nav__list {
@@ -111,11 +109,21 @@
   .site-list__item {
     border-bottom: none;
     margin-left: 15px;
+    margin-top: -5px;
     line-height: 25px;
-    font-weight: normal;
+    font-weight: 400;
+    font-size: 18px;
 
     &:first-child {
       border-top: none;
+    }
+
+    &:last-child {
+      margin-left: 36px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 34px;
     }
 
     &--active {
@@ -139,6 +147,8 @@
   }
 
   .main-nav--closed .main-nav__toggle {
+    display: none;
+
     img {
       display: none;
     }

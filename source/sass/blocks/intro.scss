@@ -89,6 +89,7 @@
     background: none;
     background-color: #ffffff;
     text-align: left;
+    margin-top: -12px;
   }
 
   .intro__button {
@@ -97,13 +98,12 @@
     font-size: 20px;
     margin-left: 120px;
     margin-bottom: 529px;
-    margin-top: 52px;
+    margin-top: 49px;
     padding: 14px 0;
   }
 
   .intro__img {
-    margin-top: 0;
-    top: 204px;
+    top: 201px;
     z-index: -1;
   }
 }
