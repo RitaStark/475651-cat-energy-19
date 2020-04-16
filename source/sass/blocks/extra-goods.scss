@@ -161,4 +161,14 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .extra-goods__extra-wrap,
+  .extra-goods__container {
+    width: 100%;
+  }
+
+  .extra-goods__extra-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }

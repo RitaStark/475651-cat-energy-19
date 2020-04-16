@@ -140,12 +140,17 @@
       padding-bottom: 5px;
     }
   }
+
+  .catalog__pic {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     margin: 0;
     width: 1220px;
+    padding-top: 70px;
   }
 
   .catalog-main__container {
@@ -169,5 +174,14 @@
 
   .catalog__button {
     width: 169px;
+  }
+
+  .catalog__pic {
+    margin-top: -40px;
+  }
+
+  .catalog__details {
+    margin-right: 37px;
+    margin-left: 37px;
   }
 }
