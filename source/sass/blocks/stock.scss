@@ -31,12 +31,41 @@
   margin-right: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .stock {
+    width: 708px;
+    margin: 0 auto;
+    background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 93px;
+    }
+  }
+
+  .stock__text {
+    padding: 122px 109px 16px 425px;
+    text-align: left;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .stock {
     width: 30%;
-    margin-top: 123px;
+    margin-top: 94px;
     padding-right: 0;
     position: relative;
+    background: url("/img/gift-photo-desktop@1x.jpg") no-repeat;
+    background-position: center;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 54px;
+    }
   }
 
   .stock__text {
@@ -48,6 +77,7 @@
     padding-top: 135px;
     padding-bottom: 36px;
     margin-top: 40px;
+    text-align: center;
 
     & p {
       padding: 0;
