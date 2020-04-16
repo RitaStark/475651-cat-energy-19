@@ -21,7 +21,7 @@
       </a>
     </div>
 
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Кнопка закрытия меню">
         <img src="img/icon-mobile-menu.svg" width="25px" height="19px" alt="Значок закрытия меню">
       </button>
@@ -237,59 +237,67 @@
         <h3 class="extra-goods__header">Дополнительные товары</h3>
 
         <div class="extra-goods__item">
-          <div class="extra-goods__container">
-            <p class="extra-goods__name">Сахарозаменитель</p>
-            <div class="extra-goods__wrap">
-              <p class="extra-goods__details">1 упаковка (100 г)</p>
-              <p class="extra-goods__details">200 Р.</p>
+          <div class="extra-goods__extra-wrap">
+            <div class="extra-goods__container">
+              <p class="extra-goods__name">Сахарозаменитель</p>
+              <div class="extra-goods__wrap">
+                <p class="extra-goods__details">1 упаковка (100 г)</p>
+                <p class="extra-goods__details">200 Р.</p>
+              </div>
             </div>
+            <a href="#" class="extra-goods__button" type="button">заказать</a>
           </div>
-          <a href="#" class="extra-goods__button" type="button">заказать</a>
         </div>
 
         <div class="extra-goods__item">
-          <div class="extra-goods__container">
-            <p class="extra-goods__name">Питьевая вода</p>
-            <div class="extra-goods__wrap">
-              <p class="extra-goods__details">5 литров</p>
-              <p class="extra-goods__details">50 Р.</p>
+          <div class="extra-goods__extra-wrap">
+            <div class="extra-goods__container">
+              <p class="extra-goods__name">Питьевая вода</p>
+              <div class="extra-goods__wrap">
+                <p class="extra-goods__details">5 литров</p>
+                <p class="extra-goods__details">50 Р.</p>
+              </div>
             </div>
+            <a href="#" class="extra-goods__button" type="button">заказать</a>
           </div>
-          <a href="#" class="extra-goods__button" type="button">заказать</a>
         </div>
 
         <div class="extra-goods__item">
-          <div class="extra-goods__container">
-            <p class="extra-goods__name">Молоко</p>
-            <div class="extra-goods__wrap">
-              <p class="extra-goods__details">1 литр</p>
-              <p class="extra-goods__details">100 Р.</p>
+          <div class="extra-goods__extra-wrap">
+            <div class="extra-goods__container">
+              <p class="extra-goods__name">Молоко</p>
+              <div class="extra-goods__wrap">
+                <p class="extra-goods__details">1 литр</p>
+                <p class="extra-goods__details">100 Р.</p>
+              </div>
             </div>
+            <a href="#" class="extra-goods__button" type="button">заказать</a>
           </div>
-          <a href="#" class="extra-goods__button" type="button">заказать</a>
         </div>
 
         <div class="extra-goods__item">
-          <div class="extra-goods__container">
-            <p class="extra-goods__name">Витамины</p>
-            <div class="extra-goods__wrap">
-              <p class="extra-goods__details">1 упаковка (30 г)</p>
-              <p class="extra-goods__details">300 Р.</p>
+          <div class="extra-goods__extra-wrap">
+            <div class="extra-goods__container">
+              <p class="extra-goods__name">Витамины</p>
+              <div class="extra-goods__wrap">
+                <p class="extra-goods__details">1 упаковка (30 г)</p>
+                <p class="extra-goods__details">300 Р.</p>
+              </div>
             </div>
+            <a href="#" class="extra-goods__button" type="button">заказать</a>
           </div>
-          <a href="#" class="extra-goods__button" type="button">заказать</a>
         </div>
 
       </section>
 
 
       <section class="stock">
-        <p class="stock__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="stock__text stock__catalog-text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
     </div>
 
     <section class="contacts">
-      <div class="contacts__container contacts__bg">
+      <div class="contacts__container contacts__bg contacts__catalog-style">
         <div class="contacts__details">
           <div class="contacts__wrap">
             <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
@@ -361,15 +369,17 @@
         </li>
       </ul>
       <div class="page-footer__wrapper">
-        <a href="https://htmlacademy.ru/study" class="page-footer__academy">HTML Academy</a>
-        <a class="page-footer__academy-logo">
-          <svg class="page-footer__academy-icon" width="27px" height="34px" alt="Логотип HTMLAcademy"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-            <path fill="#2E368F"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-          </svg>
+        <div class="page-footer__block">
+          <a href="https://htmlacademy.ru/study" class="page-footer__academy">HTML Academy</a>
 
-        </a>
+          <a class="page-footer__academy-logo">
+            <svg class="page-footer__academy-icon" width="27" height="34" alt="Логотип HTMLAcademy"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+              <path fill="#"
+                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
