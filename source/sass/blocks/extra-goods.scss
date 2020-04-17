@@ -64,7 +64,8 @@
 
   .extra-goods__header {
     @include margin-30;
-    padding-left: 0;
+    padding-left: 37px;
+    margin-top: 64px;
     font-size: 36px;
     border-bottom: none;
   }

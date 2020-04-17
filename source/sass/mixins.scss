@@ -16,3 +16,8 @@
   margin-left: 41px;
   margin-right: 37px;
 }
+
+@mixin margin-lr-none {
+  margin-left: 0;
+  margin-right: 0;
+}
