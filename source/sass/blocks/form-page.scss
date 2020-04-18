@@ -12,17 +12,27 @@
 
 .form-page__header {
   font-size: 36px;
+  margin-top: 47px;
 }
 
 .form-page__text {
   margin-top: 35px;
+  margin-bottom: 0;
   font-size: 14px;
   text-transform: uppercase;
 }
 
+// .form-page__wrapper {
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   margin-top: 39px;
+// }
+
 .form-page__wrapper {
   width: 280px;
-  margin: 0 auto;
+  margin: 39px auto 0 auto;
+  font-size: 16px;
+  text-transform: uppercase;
   // @include margin-22;
 }
 
