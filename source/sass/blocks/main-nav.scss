@@ -192,5 +192,11 @@
         left: 0;
       }
     }
+
+    &--active {
+      &::before {
+        top: 59px;
+      }
+    }
   }
 }

@@ -180,7 +180,7 @@
 
     &::after {
       width: 931px;
-      right: -480px;
+      right: -407px;
     }
   }
 
@@ -238,5 +238,7 @@
   .extra-goods__wrap {
     margin-right: 0;
     margin-bottom: -10px;
+    justify-content: space-between;
+    width: 47%;
   }
 }
