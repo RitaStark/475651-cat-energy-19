@@ -188,6 +188,7 @@
   .catalog-main__header {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 19px;
   }
 
   .catalog__list {
@@ -208,7 +209,11 @@
   }
 
   .catalog__details {
-    margin-right: 37px;
-    margin-left: 37px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .catalog__list:nth-last-child(-n + 4) {
+    margin-bottom: 0;
   }
 }
