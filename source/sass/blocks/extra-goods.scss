@@ -103,10 +103,15 @@
   .extra-goods__item {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     border: 1px solid #cdcdcd;
 
     @include margin-30;
+
+    &:last-child .extra-goods__extra-wrap {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
   }
 
   .extra-goods__name {
@@ -119,16 +124,26 @@
     padding-left: 38px;
     margin-right: 38px;
     width: 40%;
+    justify-content: flex-end;
+  }
+
+  .extra-goods__wrap .extra-goods__details {
+    &:first-child {
+      margin-right: 57px;
+    }
   }
 
   .extra-goods__button {
     margin-left: 38px;
     margin-right: 38px;
+    margin-top: -2px;
   }
 
   .extra-goods__details {
     margin-bottom: 0;
     margin-top: 7px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .extra-goods__container {
