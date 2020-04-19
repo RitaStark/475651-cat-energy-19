@@ -57,12 +57,13 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: -5px;
+    margin-top: 74px;
   }
 
   .contacts__details {
     width: 625px;
     margin: 0 auto;
-    padding: 42px 45px 45px 45px;
+    padding: 45px 45px 45px 45px;
   }
 
   .contacts__wrap {

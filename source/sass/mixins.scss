@@ -13,7 +13,7 @@
 }
 
 @mixin tablet-margin {
-  margin-left: 41px;
+  margin-left: 40px;
   margin-right: 37px;
 }
 
@@ -42,6 +42,13 @@
 @mixin apply-to-last-row($column-count) {
   & > div:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}),
   & > div:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}) ~ div {
+    @content;
+  }
+}
+
+@mixin apply-to-last-row-li($column-count) {
+  & > li:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}),
+  & > li:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}) ~ li {
     @content;
   }
 }
