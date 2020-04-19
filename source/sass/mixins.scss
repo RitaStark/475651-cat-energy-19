@@ -22,6 +22,11 @@
   margin-right: 0;
 }
 
+@mixin font-size-20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 @mixin remove-lastrow-margin($column-count) {
   @include apply-to-last-row($column-count) {
     margin-bottom: 0;

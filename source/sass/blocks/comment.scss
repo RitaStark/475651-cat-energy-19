@@ -35,8 +35,44 @@
 @media (min-width: $tablet-width) {
   .comment {
     width: 708px;
+    margin-top: 47px;
 
     @include tablet-margin;
+  }
+
+  .comment__header {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &::after {
+      width: 500px;
+      top: 22px;
+      right: -10px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      top: 22px;
+      left: -91px;
+      background-color: #68b738;
+    }
+  }
+
+  .comment textarea {
+    text-transform: uppercase;
+    resize: vertical;
+    min-height: 148px;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 8px;
+    }
   }
 }
 

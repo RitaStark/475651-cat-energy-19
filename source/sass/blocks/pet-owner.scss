@@ -64,8 +64,60 @@
 @media (min-width: $tablet-width) {
   .pet-owner {
     border-bottom: none;
+    margin-top: 76px;
 
     @include tablet-margin;
+  }
+
+  .pet-owner__header {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      top: 22px;
+      left: -91px;
+      background-color: #68b738;
+    }
+  }
+
+  .pet-owner__container {
+    margin-top: 77px;
+
+    @include font-size-20;
+  }
+
+  .pet-owner__wrap {
+    & label {
+      margin-right: 20px;
+    }
+
+    &:last-child label {
+      margin-right: 14px;
+      margin-top: -20px;
+    }
+  }
+
+  .pet-owner__wrap input[type="text"] {
+    margin-bottom: 21px;
+    padding: 12px 0 11px 18px;
+  }
+
+  .pet-owner__mail-img {
+    top: 18px;
+    right: 18px;
+  }
+
+  .pet-owner__tel-img {
+    top: 17px;
+    right: 17px;
   }
 }
 

@@ -49,10 +49,16 @@
 
   .form-page__header {
     font-size: 60px;
+    font-weight: 400;
+    margin-top: 29px;
   }
 
   .form-page__text {
     font-size: 20px;
+    margin-top: 50px;
+    line-height: 30px;
+    padding-right: 252px;
+    // margin-top: 50px;
 
     @include tablet-margin;
   }
@@ -60,6 +66,10 @@
   .form-page__wrapper {
     width: 708px;
     margin: 0 auto;
+  }
+
+  .form-page__container {
+    margin-top: 64px;
   }
 }
 

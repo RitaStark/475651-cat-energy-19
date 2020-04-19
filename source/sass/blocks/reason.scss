@@ -47,6 +47,9 @@ input[type="radio"] {
 @media (min-width: $tablet-width) {
   .reason {
     border: 1px solid #e6e6e6;
+    margin-top: 52px;
+    padding-top: 8px;
+    padding-bottom: 14px;
 
     @include tablet-margin;
   }
@@ -54,12 +57,38 @@ input[type="radio"] {
   .reason__list {
     margin-left: 28px;
     border-bottom: none;
+
+    @include font-size-20;
   }
 
   .reason__item {
+    margin-bottom: 32px;
+
+    &::before {
+      width: 37px;
+      height: 37px;
+      top: -10px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
+
+    & label {
+      padding-left: 57px;
+    }
+  }
+
+  .reasons__radio:checked + label::before {
+    content: "";
+    left: 11px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
   }
 }
 
