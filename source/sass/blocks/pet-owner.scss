@@ -1,9 +1,10 @@
 .pet-owner {
-  padding-bottom: 23px;
+  // padding-bottom: 23px;
 }
 
 .pet-owner__header {
   font-size: 24px;
+  line-height: 24px;
   text-transform: none;
   margin-top: 27px;
   margin-bottom: 29px;
@@ -20,20 +21,44 @@
   }
 }
 
+.pet-owner__container {
+  text-transform: uppercase;
+}
+
 .pet-owner__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   & label {
-    margin-right: 15px;
+    margin-right: 12px;
+    margin-top: -14px;
+  }
+
+  &:first-child {
+    margin-top: 35px;
   }
 }
 
+.pet-owner__mail-img {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.pet-owner__tel-img {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
 .pet-owner__wrap input[type="text"] {
+  text-transform: uppercase;
   margin-bottom: 14px;
   flex-grow: 1;
-  padding: 15px 0 15px 16px;
+  padding: 12px 0 11px 12px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,10 +1,23 @@
 .comment {
-  margin-bottom: 31px;
+  // margin-bottom: 31px;
 }
 
 .comment__header {
   font-size: 24px;
   text-transform: none;
+  margin-top: 13px;
+  margin-bottom: 33px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    top: 15px;
+    right: -41px;
+    background-color: #68b738;
+  }
 }
 
 .comment textarea {
@@ -12,6 +25,11 @@
   resize: vertical;
   min-height: 148px;
   width: 100%;
+
+  &::placeholder {
+    padding-top: 10px;
+    padding-left: 11px;
+  }
 }
 
 @media (min-width: $tablet-width) {
