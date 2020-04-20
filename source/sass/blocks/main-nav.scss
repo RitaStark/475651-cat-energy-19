@@ -92,6 +92,14 @@
     text-decoration: none;
     color: #111111;
     font-weight: bold;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -171,6 +179,14 @@
     & a {
       color: #ffffff;
       font-weight: 400;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 

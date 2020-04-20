@@ -50,7 +50,7 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #63a73a;
+  background-color: #68b738;
   padding: 12px 45px 12px 44px;
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
@@ -59,6 +59,14 @@
   margin-left: 20px;
   margin-bottom: 23px;
   margin-top: 135px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

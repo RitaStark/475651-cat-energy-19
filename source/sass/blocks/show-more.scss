@@ -42,6 +42,13 @@
   padding-bottom: 12px;
   display: block;
   margin: 0 20px 0 20px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
