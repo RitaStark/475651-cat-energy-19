@@ -187,8 +187,45 @@ input[type="checkbox"] {
     margin-left: 0;
   }
 
+  .extra__header {
+    &::after {
+      width: 1200px;
+      right: -269px;
+    }
+  }
+
+  .extra__list {
+    margin-top: 65px;
+
+    @include apply-to-last-row-li(2) {
+      margin-top: 0;
+    }
+  }
+
+  .extra__item {
+    margin-top: 0;
+
+    &:first-child {
+      margin-top: 0;
+      margin-right: 68px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 160px;
+    }
+
+    &:last-child {
+      margin-right: 59px;
+    }
+  }
+
   .send-form {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 36px;
+
+    &__button {
+      margin-right: 80px;
+    }
   }
 }

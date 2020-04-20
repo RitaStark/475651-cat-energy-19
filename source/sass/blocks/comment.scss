@@ -81,4 +81,11 @@
     width: 1220px;
     margin-left: 0;
   }
+
+  .comment__header {
+    &::after {
+      width: 1200px;
+      right: -199px;
+    }
+  }
 }

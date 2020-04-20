@@ -126,18 +126,28 @@
   .pet-owner {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 50px;
   }
 
   .pet-owner__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 77px;
   }
 
   .pet-owner__wrap {
     width: 50%;
 
     &:first-child {
+      margin-top: 0;
       margin-right: 80px;
+    }
+  }
+
+  .pet-owner__header {
+    &::after {
+      width: 1000px;
+      right: -333px;
     }
   }
 }
