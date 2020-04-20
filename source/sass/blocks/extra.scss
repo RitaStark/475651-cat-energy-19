@@ -59,7 +59,8 @@ input[type="checkbox"] {
   background-size: 22px 17px;
   left: 0;
   top: -5px;
-  filter: saturate(6) hue-rotate(16deg);
+
+  // filter: saturate(6) hue-rotate(16deg);
 }
 
 .send-form {
@@ -173,6 +174,11 @@ input[type="checkbox"] {
     font-size: 16px;
     line-height: 16px;
     margin-top: 25px;
+  }
+
+  .food__check:checked + label::before {
+    left: 6px;
+    top: -3px;
   }
 }
 
