@@ -13,6 +13,42 @@
 }
 
 @mixin tablet-margin {
-  margin-left: 41px;
+  margin-left: 40px;
   margin-right: 37px;
+}
+
+@mixin margin-lr-none {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@mixin font-size-20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin remove-lastrow-margin($column-count) {
+  @include apply-to-last-row($column-count) {
+    margin-bottom: 0;
+  }
+}
+
+// @mixin colorup-lastrow($column-count) {
+//   @include apply-to-last-row($column-count) {
+//     border: 3px solid red;
+//   }
+// }
+
+@mixin apply-to-last-row($column-count) {
+  & > div:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}),
+  & > div:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}) ~ div {
+    @content;
+  }
+}
+
+@mixin apply-to-last-row-li($column-count) {
+  & > li:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}),
+  & > li:nth-child(#{$column-count}n + 1):nth-last-child(-n + #{$column-count}) ~ li {
+    @content;
+  }
 }

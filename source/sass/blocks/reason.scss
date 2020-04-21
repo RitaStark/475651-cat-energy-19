@@ -5,7 +5,7 @@ input[type="radio"] {
 .reason__list {
   list-style: none;
   padding-left: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   margin-top: 0;
   border-bottom: 1px solid #ededed;
 }
@@ -17,13 +17,24 @@ input[type="radio"] {
   &::before {
     content: "";
     position: absolute;
-    // left: 28px;
     top: -6px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid #e6e6e6;
   }
+
+  & label {
+    padding-left: 46px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 22px;
+  }
+}
+
+.reason__item:hover::before {
+  border: 1px solid #bababa;
 }
 
 .reasons__radio:checked + label::before {
@@ -37,13 +48,12 @@ input[type="radio"] {
   background-color: #68b738;
 }
 
-.reason__item label {
-  padding-left: 50px;
-}
-
 @media (min-width: $tablet-width) {
   .reason {
     border: 1px solid #e6e6e6;
+    margin-top: 52px;
+    padding-top: 8px;
+    padding-bottom: 14px;
 
     @include tablet-margin;
   }
@@ -51,12 +61,38 @@ input[type="radio"] {
   .reason__list {
     margin-left: 28px;
     border-bottom: none;
+
+    @include font-size-20;
   }
 
   .reason__item {
+    margin-bottom: 32px;
+
+    &::before {
+      width: 37px;
+      height: 37px;
+      top: -10px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
+
+    & label {
+      padding-left: 57px;
+    }
+  }
+
+  .reasons__radio:checked + label::before {
+    content: "";
+    left: 11px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -65,6 +101,7 @@ input[type="radio"] {
     width: 50%;
     margin-bottom: 20px;
     margin-right: 0;
+    margin-top: 3px;
   }
 
   .reason__list {

@@ -7,13 +7,27 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   padding: 0 0 15px 20px;
-  border-bottom: 1px solid #d9d9d9;
+  margin-top: 27px;
+  margin-bottom: 16px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: 14px;
+    right: 0;
+    background-color: #68b738;
+  }
 }
 
 .extra-goods__name {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .extra-goods__button {
@@ -22,10 +36,22 @@
   font-size: 16px;
   text-decoration: none;
   background-color: #68b738;
-  color: #ddedd6;
+  color: #ffffff;
   display: block;
   text-align: center;
-  padding: 12px 0 13px 0;
+  padding: 10px 0 12px 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.extra-goods__container {
+  border-top: 1px solid #d9d9d9;
 }
 
 .extra-goods__wrap {
@@ -36,11 +62,16 @@
 .extra-goods__details {
   font-size: 14px;
   font-family: "Arial", sans-serif;
+  margin-top: 0;
 }
 
 .extra-goods__item {
-  border-bottom: 1px solid #d9d9d9;
   padding: 0 20px 15px 20px;
+
+  &:last-child .extra-goods__extra-wrap {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 16px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,17 +83,43 @@
 
   .extra-goods__header {
     @include margin-30;
-    padding-left: 0;
+    padding-left: 37px;
+    margin-top: 64px;
+    margin-bottom: 70px;
     font-size: 36px;
     border-bottom: none;
+    padding-bottom: 7px;
+
+    &::after {
+      width: 350px;
+      height: 3px;
+      top: 50%;
+      right: -52px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      top: 50%;
+      left: -51px;
+      background-color: #68b738;
+    }
   }
 
   .extra-goods__item {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     border: 1px solid #cdcdcd;
+
     @include margin-30;
+
+    &:last-child .extra-goods__extra-wrap {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
   }
 
   .extra-goods__name {
@@ -75,17 +132,34 @@
     padding-left: 38px;
     margin-right: 38px;
     width: 40%;
+    justify-content: flex-end;
+  }
+
+  .extra-goods__wrap .extra-goods__details {
+    &:first-child {
+      margin-right: 57px;
+    }
   }
 
   .extra-goods__button {
     margin-left: 38px;
     margin-right: 38px;
+    margin-top: -2px;
+  }
+
+  .extra-goods__details {
+    margin-bottom: 0;
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .extra-goods__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -3px;
+    border-top: none;
   }
 }
 
@@ -104,12 +178,19 @@
   }
 
   .extra-goods {
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
   }
 
   .extra-goods__header {
     padding-left: 0;
+    margin-left: 0;
+    margin-top: 76px;
+
+    &::after {
+      width: 931px;
+      right: -407px;
+    }
   }
 
   .extra-goods__item {
@@ -119,6 +200,7 @@
     border-bottom: 1px solid #cdcdcd;
     border-left: none;
     border-right: none;
+    margin-left: 0;
 
     &:not(:first-child) {
       border-top: 1px solid #cdcdcd;
@@ -132,6 +214,8 @@
   .extra-goods__button {
     width: 30%;
     padding-bottom: 10px;
+    padding-right: 33px;
+    padding-left: 28px;
     margin-bottom: 15px;
     margin-top: 15px;
     margin-right: 0;
@@ -147,5 +231,23 @@
   .extra-goods__details {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .extra-goods__extra-wrap,
+  .extra-goods__container {
+    width: 100%;
+  }
+
+  .extra-goods__extra-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+  }
+
+  .extra-goods__wrap {
+    margin-right: 0;
+    margin-bottom: -10px;
+    justify-content: space-between;
+    width: 47%;
   }
 }

@@ -1,7 +1,19 @@
 .extra__header {
   font-size: 24px;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
+  margin-top: 21px;
   text-transform: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    top: 15px;
+    right: -64px;
+    background-color: #68b738;
+  }
 }
 
 .extra__list {
@@ -11,20 +23,25 @@
 
 .extra__item {
   font-size: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     border: 1px solid #cdcdcd;
     left: 0;
+    top: -6px;
   }
 
   & label {
-    padding-left: 66px;
+    padding-left: 45px;
+  }
+
+  &:first-child {
+    margin-top: 37px;
   }
 }
 
@@ -41,6 +58,9 @@ input[type="checkbox"] {
   background-position: center;
   background-size: 22px 17px;
   left: 0;
+  top: -5px;
+
+  // filter: saturate(6) hue-rotate(16deg);
 }
 
 .send-form {
@@ -54,19 +74,46 @@ input[type="checkbox"] {
   color: #ffffff;
   border: none;
   font-size: 16px;
-  padding: 13px 0 17px 0;
-  margin-top: 34px;
+  padding: 10px 0 12px 0;
+  margin-top: 13px;
 }
 
 .send-form__text {
   text-transform: none;
   text-align: center;
   font-size: 14px;
+  font-family: "Arial", sans-serif;
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .extra {
+    margin-top: 83px;
+
     @include tablet-margin;
+  }
+
+  .extra__header {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 26px;
+
+    &::after {
+      width: 500px;
+      top: 22px;
+      right: -120px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      top: 22px;
+      left: -91px;
+      background-color: #68b738;
+    }
   }
 
   .extra__list {
@@ -74,16 +121,41 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @include apply-to-last-row-li(2) {
+      margin-top: 25px;
+    }
   }
 
   .extra__item {
     margin-right: 80px;
+    margin-top: 40px;
+
+    @include font-size-20;
+
+    & label {
+      padding-left: 58px;
+    }
+
+    &::before {
+      width: 37px;
+      height: 37px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 101px;
+    }
+
+    &:last-child {
+      margin-right: 139px;
+    }
   }
 
   .send-form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 29px;
 
     @include tablet-margin;
   }
@@ -91,20 +163,69 @@ input[type="checkbox"] {
   .send-form__button {
     width: 50%;
     margin-right: 61px;
+    padding: 16px 0 15px 0;
+
+    @include font-size-20;
   }
 
   .send-form__text {
     width: 50%;
     text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+
+  .food__check:checked + label::before {
+    left: 6px;
+    top: -3px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .extra {
     margin-left: 0;
   }
 
+  .extra__header {
+    &::after {
+      width: 1200px;
+      right: -269px;
+    }
+  }
+
+  .extra__list {
+    margin-top: 65px;
+
+    @include apply-to-last-row-li(2) {
+      margin-top: 0;
+    }
+  }
+
+  .extra__item {
+    margin-top: 0;
+
+    &:first-child {
+      margin-top: 0;
+      margin-right: 68px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 160px;
+    }
+
+    &:last-child {
+      margin-right: 59px;
+    }
+  }
+
   .send-form {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 36px;
+
+    &__button {
+      margin-right: 80px;
+    }
   }
 }

@@ -184,16 +184,20 @@
   }
 
   .weight__wrapper {
-    margin-right: 30px;
+    margin-right: 23px;
   }
 
   .weight__value {
     font-size: 30px;
     padding: 18px 0;
-    margin-right: 21px;
+    margin-right: 18px;
+  }
 
-    &:nth-child(2) {
-      margin-right: 23px;
+  .weight__wrapper:nth-child(2) {
+    margin-left: 10px;
+
+    & .weight__value {
+      margin-right: 34px;
     }
   }
 
@@ -213,6 +217,7 @@
 
   .example__cost {
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   .example__cost-price {
@@ -299,7 +304,7 @@
 @media (min-width: $desktop-width) {
   .example {
     width: auto;
-    background: linear-gradient(to top, #f2f2f2 80%, #ffffff 50%);
+    background: linear-gradient(to top, #f2f2f2 74%, #ffffff 50%);
   }
 
   .example__main-wrap {
@@ -352,7 +357,9 @@
   .example__cost-block {
     width: 328px;
     text-align: left;
-    margin-top: 0;
+    margin-top: 21px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .weight__text {
@@ -364,6 +371,8 @@
   }
 
   .weight__wrapper {
+    margin-right: 0;
+
     &:first-child {
       margin-right: 6px;
     }

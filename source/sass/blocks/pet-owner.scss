@@ -1,33 +1,134 @@
 .pet-owner {
-  padding-bottom: 23px;
+  // padding-bottom: 23px;
 }
 
 .pet-owner__header {
   font-size: 24px;
+  line-height: 24px;
   text-transform: none;
+  margin-top: 27px;
+  margin-bottom: 29px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    top: 15px;
+    right: -71px;
+    background-color: #68b738;
+  }
+}
+
+.pet-owner__container {
+  text-transform: uppercase;
 }
 
 .pet-owner__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   & label {
-    margin-right: 15px;
+    margin-right: 12px;
+    margin-top: -14px;
+  }
+
+  &:first-child {
+    margin-top: 35px;
   }
 }
 
+.pet-owner__mail-img {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.pet-owner__tel-img {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
 .pet-owner__wrap input[type="text"] {
+  text-transform: uppercase;
   margin-bottom: 14px;
   flex-grow: 1;
-  padding: 15px 0 15px 16px;
+  padding: 12px 0 11px 12px;
+  position: relative;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: 0;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .pet-owner {
     border-bottom: none;
+    margin-top: 76px;
 
     @include tablet-margin;
+  }
+
+  .pet-owner__header {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      top: 22px;
+      left: -91px;
+      background-color: #68b738;
+    }
+  }
+
+  .pet-owner__container {
+    margin-top: 77px;
+
+    @include font-size-20;
+  }
+
+  .pet-owner__wrap {
+    & label {
+      margin-right: 20px;
+      margin-top: -23px;
+    }
+
+    &:last-child label {
+      margin-right: 14px;
+      margin-top: -20px;
+    }
+  }
+
+  .pet-owner__wrap input[type="text"] {
+    margin-bottom: 21px;
+    padding: 12px 0 12px 18px;
+  }
+
+  .pet-owner__mail-img {
+    top: 18px;
+    right: 18px;
+  }
+
+  .pet-owner__tel-img {
+    top: 17px;
+    right: 17px;
   }
 }
 
@@ -35,18 +136,28 @@
   .pet-owner {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 50px;
   }
 
   .pet-owner__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 77px;
   }
 
   .pet-owner__wrap {
     width: 50%;
 
     &:first-child {
+      margin-top: 0;
       margin-right: 80px;
+    }
+  }
+
+  .pet-owner__header {
+    &::after {
+      width: 1000px;
+      right: -333px;
     }
   }
 }

@@ -81,6 +81,8 @@
 .target__details {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -96,6 +98,10 @@
     width: 25px;
     left: 116px;
     top: 4px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -114,7 +120,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 23px 312px 0 52px;
-    padding-bottom: 0;
+    padding-bottom: 56px;
     border-bottom: none;
   }
 
@@ -143,6 +149,7 @@
     // margin-left: 30px;
     // margin-right: 30px;
     margin: 0 30px 29px 30px;
+    padding-bottom: 58px;
     background-color: #f2f2f2;
 
     &--mass-gain {
@@ -207,6 +214,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 50%;
+    padding-bottom: 59px;
 
     &:first-child {
       margin-right: 78px;
@@ -214,8 +222,6 @@
 
     &--lose-weight {
       &::after {
-        // content: "";
-        // position: absolute;
         width: 100px;
         height: 100px;
         // border-radius: 50%;
@@ -274,7 +280,7 @@
   .target__text {
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    margin: 71px 0 0 52px;
+    margin: 71px 0 32px 52px;
     padding-bottom: 0;
     padding-right: 74px;
     border-bottom: none;

@@ -11,8 +11,16 @@
 
 .page-footer__logo {
   display: block;
-  margin: 17px auto 0 auto;
-  padding: 24px 0 24px 0;
+  margin: -20px auto 0 auto;
+  padding: 24px 0 32px 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -25,17 +33,37 @@
   color: #444444;
   font-size: 16px;
   font-family: "Arial", sans-serif;
+  cursor: pointer;
 
   &:active {
     opacity: 0.3;
   }
 }
 
+.page-footer__academy-icon {
+  fill: #666666;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-logo {
+  margin-right: -6px;
+}
+
 .social-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 13px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
@@ -62,14 +90,15 @@
 .page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 24px 0 24px 0;
 }
 
-.page-footer__academy-icon {
-  fill: #666666;
+.page-footer__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 24px 0;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,11 +107,25 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__wrapper {
+    margin-right: 10px;
+  }
+
+  .page-footer__block {
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 0;
   }
 
   .page-footer__logo {
     margin-left: 0;
+
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .social-list,
@@ -94,8 +137,16 @@
   .social-list {
     align-items: center;
     border-top: none;
+    border-bottom: none;
     margin-left: 65px;
-    margin-top: 10px;
+    margin-top: -14px;
+    padding-top: 0;
+
+    &__item {
+      &:nth-child(-n + 2) {
+        margin-right: 29px;
+      }
+    }
   }
 
   .social-list__icon {
@@ -115,6 +166,11 @@
     }
   }
 
+  .page-footer__academy {
+    margin-top: -8px;
+    margin-left: 30px;
+  }
+
   .page-footer__academy-icon {
     width: 40px;
     height: 43px;
@@ -125,5 +181,28 @@
   .page-footer__container {
     width: 1220px;
     margin: 0 auto;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .page-footer__logo,
+  .page-footer__block,
+  .social-list {
+    padding-bottom: 0;
+  }
+
+  .social-list {
+    border-bottom: none;
+    margin-top: 0;
+    margin-left: 226px;
+  }
+
+  .page-footer__academy {
+    margin-top: 3px;
+    margin-left: 183px;
+  }
+
+  .page-footer__academy-logo {
+    margin-top: 3px;
   }
 }
