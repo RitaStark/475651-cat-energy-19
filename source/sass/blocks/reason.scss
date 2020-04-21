@@ -33,6 +33,10 @@ input[type="radio"] {
   }
 }
 
+.reason__item:hover::before {
+  border: 1px solid #bababa;
+}
+
 .reasons__radio:checked + label::before {
   content: "";
   position: absolute;

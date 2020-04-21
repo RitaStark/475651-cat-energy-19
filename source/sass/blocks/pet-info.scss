@@ -18,6 +18,16 @@
     margin-bottom: 0;
     margin-top: 2px;
   }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: 0;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
 }
 
 .pet-info__wrap {

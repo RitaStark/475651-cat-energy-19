@@ -36,10 +36,18 @@
   font-size: 16px;
   text-decoration: none;
   background-color: #68b738;
-  color: #ddedd6;
+  color: #ffffff;
   display: block;
   text-align: center;
   padding: 10px 0 12px 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .extra-goods__container {
