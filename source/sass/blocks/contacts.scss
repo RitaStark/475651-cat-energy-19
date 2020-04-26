@@ -108,6 +108,7 @@
     background: url("/img/bg-map-desktop@1x.png") no-repeat;
     background-position: center;
     min-height: 400px;
+    position: relative;
   }
 
   .contacts__container {
@@ -141,9 +142,5 @@
 
   .contacts__address {
     text-align: left;
-  }
-
-  .contacts__map {
-    position: relative;
   }
 }

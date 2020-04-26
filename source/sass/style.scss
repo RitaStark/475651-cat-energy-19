@@ -19,7 +19,8 @@
 @import "blocks/pet-owner";
 @import "blocks/comment";
 @import "blocks/extra";
-@import "../../node_modules/node-normalize-scss/_normalize.scss";
+@import "../../node_modules/normalize-scss/sass/_normalize.scss";
+// @import "../../node_modules/node-normalize-scss/_normalize.scss";
 
 body {
   background-color: #ffffff;
