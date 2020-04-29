@@ -185,20 +185,30 @@
   }
 
   .weight__wrapper {
-    margin-right: 23px;
+    margin-right: 38px;
+
+    &:first-child {
+      margin-right: 73px;
+    }
   }
 
   .weight__value {
     font-size: 30px;
-    padding: 18px 0;
+    padding: 14px 0;
     margin-right: 18px;
   }
 
   .weight__wrapper:nth-child(2) {
-    margin-left: 10px;
+    margin-left: -48px;
 
     & .weight__value {
-      margin-right: 34px;
+      margin-right: 22px;
+      padding-left: 0;
+    }
+
+    & .weight__text {
+      padding: 4px 5px;
+      margin-left: -12px;
     }
   }
 
@@ -228,8 +238,9 @@
   .weight__text {
     font-size: 14px;
     background-color: #ffffff;
-    padding: 0 9px;
+    padding: 4px 9px;
     margin-top: 29px;
+    margin-right: 0;
   }
 
   .example__weight {
