@@ -182,6 +182,7 @@
     width: 1220px;
     margin: 0 auto;
     padding-bottom: 50px;
+    padding-top: 71px;
     align-items: center;
   }
 
@@ -194,7 +195,11 @@
   .social-list {
     border-bottom: none;
     margin-top: 0;
-    margin-left: 226px;
+    margin-left: 291px;
+  }
+
+  .page-footer__wrapper {
+    margin-top: -6px;
   }
 
   .page-footer__academy {

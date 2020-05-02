@@ -416,8 +416,17 @@
     }
 
     &:last-child {
-      margin-top: -25px;
+      // margin-top: -25px;
+      margin-bottom: 0;
     }
+  }
+
+  .example__before-text {
+    margin-right: 33px;
+  }
+
+  .example__after-text {
+    margin-left: -6px;
   }
 
   img.example__pic {
