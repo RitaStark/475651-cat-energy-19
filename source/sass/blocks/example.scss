@@ -328,6 +328,8 @@
   .example__header {
     margin-bottom: 0;
     margin-top: -35px;
+    padding-top: 16px;
+    font-weight: 400;
   }
 
   .example__container {
@@ -361,6 +363,11 @@
     margin-top: -160px;
   }
 
+  .example__cost-price {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .example__weight {
     width: 100%;
     margin-bottom: 7px;
@@ -372,6 +379,7 @@
     margin-top: 21px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .weight__text {
@@ -397,7 +405,7 @@
   .example__text {
     padding-right: 152px;
     margin-bottom: 59px;
-    margin-top: 300px;
+    margin-top: 291px;
   }
 
   .example__part {
