@@ -49,7 +49,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.food__check:checked + label::before {
+.extra__check:checked + label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -177,7 +177,7 @@ input[type="checkbox"] {
     margin-top: 25px;
   }
 
-  .food__check:checked + label::before {
+  .extra__check:checked + label::before {
     left: 6px;
     top: -3px;
   }
