@@ -1,7 +1,4 @@
 .form-page {
-  // width: 320px;
-  // margin: 0 auto;
-
   @include font-style;
 }
 
@@ -22,26 +19,14 @@
   text-transform: uppercase;
 }
 
-// .form-page__wrapper {
-//   font-size: 16px;
-//   text-transform: uppercase;
-//   margin-top: 39px;
-// }
-
 .form-page__wrapper {
   width: 280px;
   margin: 39px auto 0 auto;
   font-size: 16px;
   text-transform: uppercase;
-  // @include margin-22;
 }
 
 @media (min-width: $tablet-width) {
-  // .form-page {
-  //   width: 768px;
-  //   margin: 0 auto;
-  // }
-
   .form-page__head {
     width: 708px;
     margin: 0 auto;
@@ -58,7 +43,6 @@
     margin-top: 50px;
     line-height: 30px;
     padding-right: 252px;
-    // margin-top: 50px;
 
     @include tablet-margin;
   }
@@ -75,11 +59,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .form-page {
-  //   width: 1220px;
-  //   margin: 0 auto;
-  // }
-
   .form-page__head {
     width: 1220px;
     margin: 0 auto;

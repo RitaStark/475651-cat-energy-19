@@ -4,11 +4,6 @@
   margin: 0 auto;
 }
 
-.example__wrapper {
-  // width: 320px;
-  // margin: 0 auto;
-}
-
 .example__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -123,10 +118,6 @@
 
   display: flex;
   justify-content: space-between;
-}
-
-.example__cost {
-  // margin-top: -5px;
 }
 
 .example__pic {
@@ -322,7 +313,6 @@
   .example__main-wrap {
     width: 1220px;
     margin: 0 auto;
-    // background-color: #ffffff;
   }
 
   .example__header {
@@ -416,7 +406,6 @@
     }
 
     &:last-child {
-      // margin-top: -25px;
       margin-bottom: 0;
     }
   }

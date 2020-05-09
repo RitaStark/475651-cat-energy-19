@@ -173,19 +173,14 @@
     &--lose-weight {
       &::after {
         content: "";
-        // position: absolute;
         width: 200px;
         height: 200px;
-        // border-radius: 50%;
-        // background-color: #68b738;
         top: 92px;
         left: 446px;
       }
 
       &::before {
         content: "";
-        // position: absolute;
-        // background: url("/img/icon-cat-slim.svg") no-repeat;
         height: 194px;
         width: 141px;
         z-index: 1;
@@ -218,8 +213,6 @@
       &::after {
         width: 100px;
         height: 100px;
-        // border-radius: 50%;
-        // background-color: #68b738;
         top: 47px;
         left: 52px;
       }
@@ -230,7 +223,6 @@
         background: url("/img/icon-cat-slim.svg") no-repeat;
         height: 97px;
         width: 71px;
-        // z-index: 1;
         left: 68px;
         top: 43px;
       }
@@ -238,12 +230,8 @@
 
     &--mass-gain {
       &::after {
-        // content: "";
-        // position: absolute;
         width: 100px;
         height: 100px;
-        // border-radius: 50%;
-        // background-color: #68b738;
         top: 47px;
         left: 52px;
       }
