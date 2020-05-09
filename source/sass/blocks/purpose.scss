@@ -225,9 +225,9 @@
       }
 
       &::before {
-        // content: "";
-        // position: absolute;
-        // background: url("/img/icon-cat-slim.svg") no-repeat;
+        content: "";
+        position: absolute;
+        background: url("/img/icon-cat-slim.svg") no-repeat;
         height: 97px;
         width: 71px;
         // z-index: 1;
@@ -249,9 +249,9 @@
       }
 
       &::before {
-        // content: "";
-        // position: absolute;
-        // background: url("/img/icon-cat-pro.svg") no-repeat;
+        content: "";
+        position: absolute;
+        background: url("/img/icon-cat-pro.svg") no-repeat;
         height: 57px;
         width: 134px;
         z-index: 1;
