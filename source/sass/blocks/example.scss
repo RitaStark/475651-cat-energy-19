@@ -389,6 +389,10 @@
 
     &:last-child {
       margin-left: 10px;
+
+      & .weight__text {
+        margin-left: 0;
+      }
     }
   }
 
