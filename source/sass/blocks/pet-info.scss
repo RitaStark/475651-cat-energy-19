@@ -58,12 +58,6 @@
   &:nth-child(4) {
     margin-top: -2px;
   }
-
-  // &:last-child {
-  //   & label {
-  //     margin-top: -4px;
-  //   }
-  // }
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +71,7 @@
   .pet-info input[type="text"] {
     margin-bottom: 21px;
     margin-top: 4px;
+    font-size: 20px;
     padding: 12px 0 12px 18px;
 
     &:nth-child(2) {

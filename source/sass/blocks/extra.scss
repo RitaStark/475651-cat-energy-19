@@ -87,7 +87,7 @@ input[type="checkbox"] {
 
 @media (min-width: $tablet-width) {
   .extra {
-    margin-top: 83px;
+    margin-top: 60px;
 
     @include tablet-margin;
   }
@@ -120,15 +120,15 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 65px;
 
     @include apply-to-last-row-li(2) {
-      margin-top: 25px;
+      margin-top: 34px;
     }
   }
 
   .extra__item {
     margin-right: 80px;
-    margin-top: 40px;
 
     @include font-size-20;
 
@@ -139,6 +139,10 @@ input[type="checkbox"] {
     &::before {
       width: 37px;
       height: 37px;
+    }
+
+    &:first-child {
+      margin-top: 0;
     }
 
     &:nth-child(2) {

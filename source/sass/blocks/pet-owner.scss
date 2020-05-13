@@ -97,7 +97,7 @@
   }
 
   .pet-owner__container {
-    margin-top: 77px;
+    margin-top: 73px;
 
     @include font-size-20;
   }
@@ -115,8 +115,9 @@
   }
 
   .pet-owner__wrap input[type="text"] {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
     padding: 12px 0 12px 18px;
+    font-size: 20px;
   }
 
   .pet-owner__mail-img {
