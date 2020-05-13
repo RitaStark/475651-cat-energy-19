@@ -51,11 +51,19 @@
     }
   }
 
-  &:last-child {
-    & label {
-      margin-top: -4px;
-    }
+  &:nth-child(3) {
+    margin-top: -12px;
   }
+
+  &:nth-child(4) {
+    margin-top: -2px;
+  }
+
+  // &:last-child {
+  //   & label {
+  //     margin-top: -4px;
+  //   }
+  // }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,7 +1,7 @@
 .extra__header {
   font-size: 24px;
   margin-bottom: 32px;
-  margin-top: 21px;
+  margin-top: 10px;
   text-transform: none;
   position: relative;
 
@@ -23,7 +23,7 @@
 
 .extra__item {
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   position: relative;
 
   &::before {
@@ -41,7 +41,7 @@
   }
 
   &:first-child {
-    margin-top: 37px;
+    margin-top: -2px;
   }
 }
 
@@ -73,8 +73,8 @@ input[type="checkbox"] {
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  padding: 10px 0 12px 0;
-  margin-top: 13px;
+  padding: 8px 0 10px 0;
+  margin-top: 20px;
 }
 
 .send-form__text {
