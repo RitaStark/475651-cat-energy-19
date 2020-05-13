@@ -98,4 +98,10 @@
     margin-right: 43px;
     margin-left: 0;
   }
+
+  .pet-info__wrap {
+    &:nth-child(2) {
+      margin-top: -2px;
+    }
+  }
 }
