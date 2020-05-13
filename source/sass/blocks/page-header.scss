@@ -46,9 +46,12 @@
     }
   }
 
-  .page-header__logo-image {
+  img.page-header__logo-image {
     margin-top: -8px;
     margin-left: -4px;
+
+    width: 174px;
+    height: 59px;
   }
 
   .page-header__toggle {
@@ -75,5 +78,10 @@
   .page-header__wrapper {
     margin-left: 0;
     padding-left: 0;
+  }
+
+  img.page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
