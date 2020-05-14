@@ -1,13 +1,9 @@
-.pet-owner {
-  // padding-bottom: 23px;
-}
-
 .pet-owner__header {
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
-  margin-top: 27px;
-  margin-bottom: 29px;
+  margin-top: 33px;
+  margin-bottom: 0;
   position: relative;
 
   &::after {
@@ -37,14 +33,14 @@
   }
 
   &:first-child {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 }
 
 .pet-owner__mail-img {
   position: absolute;
   right: 16px;
-  top: 16px;
+  top: 19px;
 }
 
 .pet-owner__tel-img {
@@ -55,10 +51,12 @@
 
 .pet-owner__wrap input[type="text"] {
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   flex-grow: 1;
   padding: 12px 0 11px 12px;
   position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
 
   &:hover {
     outline: 1px solid #cdcdcd;
@@ -99,7 +97,7 @@
   }
 
   .pet-owner__container {
-    margin-top: 77px;
+    margin-top: 73px;
 
     @include font-size-20;
   }
@@ -117,8 +115,9 @@
   }
 
   .pet-owner__wrap input[type="text"] {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
     padding: 12px 0 12px 18px;
+    font-size: 20px;
   }
 
   .pet-owner__mail-img {
@@ -136,7 +135,7 @@
   .pet-owner {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 50px;
+    margin-top: 41px;
   }
 
   .pet-owner__container {

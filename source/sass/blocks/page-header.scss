@@ -16,6 +16,8 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  margin-bottom: -9px;
   margin-top: 11px;
   padding: 0 20px 0 20px;
 }
@@ -44,9 +46,12 @@
     }
   }
 
-  .page-header__logo-image {
+  img.page-header__logo-image {
     margin-top: -8px;
     margin-left: -4px;
+
+    width: 174px;
+    height: 59px;
   }
 
   .page-header__toggle {
@@ -61,24 +66,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    box-sizing: border-box;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background: url("/img/index-background-desktop@1x.jpg") no-repeat;
-      top: -161px;
-      right: 0;
-      width: 50%;
-      height: 693px;
-      background-color: #68b738;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
   .page-header {
     width: 1220px;
     margin: 0 auto;
@@ -91,5 +78,10 @@
   .page-header__wrapper {
     margin-left: 0;
     padding-left: 0;
+  }
+
+  img.page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

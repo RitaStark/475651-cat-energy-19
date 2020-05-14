@@ -1,0 +1,20 @@
+@media (min-width: $desktop-width) {
+  .page-main {
+    position: relative;
+
+    &::before {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      background-color: #68b738;
+      background-image: url("/img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      top: -167px;
+      right: -53px;
+      width: 54%;
+      height: 693px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

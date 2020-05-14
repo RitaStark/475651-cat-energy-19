@@ -8,6 +8,7 @@
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 8px;
+  margin-top: 17px;
 
   & br {
     display: none;
@@ -16,14 +17,14 @@
 
 .show-more__wrapper {
   width: 320px;
-  margin: 22px auto 23px auto;
+  margin: 24px auto 23px auto;
   text-align: center;
 }
 
 .show-more__text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-top: 0;
 
   & br {
@@ -38,8 +39,8 @@
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #f2f2f2;
-  padding-top: 9px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 7px;
   display: block;
   margin: 0 20px 0 20px;
 
@@ -55,7 +56,6 @@
 @media (min-width: $tablet-width) {
   .show-more {
     border: 1px solid #e6e6e6;
-    // margin-bottom: 0;
   }
 
   .show-more__wrapper {
@@ -64,7 +64,7 @@
   }
 
   .show-more__button {
-    margin: 88px 35px 25px 35px;
+    margin: 79px 35px 36px;
   }
 
   .show-more__header {

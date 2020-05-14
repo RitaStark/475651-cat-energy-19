@@ -4,18 +4,14 @@
   margin: 0 auto;
 }
 
-.example__wrapper {
-  // width: 320px;
-  // margin: 0 auto;
-}
-
 .example__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 21px;
   margin-top: 27px;
-  padding-top: 27px;
+  margin-bottom: 27px;
 }
 
 .example__text {
@@ -41,7 +37,7 @@
   display: flex;
   justify-content: center;
   padding: 0 15px 19px 20px;
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .example__measurement-scale {
@@ -56,7 +52,7 @@
     height: 14px;
     border: 1px solid #cdcdcd;
     border-radius: 10px;
-    top: 17px;
+    top: 19px;
   }
 
   &::after {
@@ -67,7 +63,7 @@
     border: 1px solid #cdcdcd;
     border-radius: 10px;
     background-color: #68b738;
-    top: 21px;
+    top: 23px;
     left: 4px;
   }
 }
@@ -93,12 +89,12 @@
   font-weight: bold;
   border: 1px solid #cdcdcd;
   text-align: center;
-  padding: 14px 14px;
-  margin-top: 10px;
+  padding: 9px;
+  margin-top: 12px;
 }
 
 .weight__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   position: absolute;
@@ -124,10 +120,6 @@
   justify-content: space-between;
 }
 
-.example__cost {
-  // margin-top: -5px;
-}
-
 .example__pic {
   display: block;
   margin: auto;
@@ -136,7 +128,8 @@
 @media (min-width: $tablet-width) {
   .example {
     width: auto;
-    background: linear-gradient(to top, #f2f2f2 45%, #ffffff 45%);
+    background: linear-gradient(to top, #f2f2f2 44%, #ffffff 44%);
+    padding-bottom: 1px;
   }
 
   .example__main-wrap {
@@ -146,13 +139,12 @@
 
   .example__wrapper {
     @include margin-30;
-    padding-bottom: 8px;
   }
 
   .example__header {
     width: 768px;
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 9px;
     margin-left: 30px;
     padding-left: 0;
     font-size: 60px;
@@ -169,7 +161,7 @@
   .example__text {
     font-size: 16px;
     padding-left: 0;
-    margin-top: 62px;
+    margin-top: 48px;
     margin-bottom: 40px;
     line-height: 24px;
   }
@@ -184,20 +176,30 @@
   }
 
   .weight__wrapper {
-    margin-right: 23px;
+    margin-right: 38px;
+
+    &:first-child {
+      margin-right: 73px;
+    }
   }
 
   .weight__value {
     font-size: 30px;
-    padding: 18px 0;
+    padding: 14px 0;
     margin-right: 18px;
   }
 
   .weight__wrapper:nth-child(2) {
-    margin-left: 10px;
+    margin-left: -48px;
 
     & .weight__value {
-      margin-right: 34px;
+      margin-right: 22px;
+      padding-left: 0;
+    }
+
+    & .weight__text {
+      padding: 4px 5px;
+      margin-left: -12px;
     }
   }
 
@@ -221,14 +223,15 @@
   }
 
   .example__cost-price {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   .weight__text {
     font-size: 14px;
     background-color: #ffffff;
-    padding: 0 9px;
+    padding: 4px 9px;
     margin-top: 29px;
+    margin-right: 0;
   }
 
   .example__weight {
@@ -310,12 +313,13 @@
   .example__main-wrap {
     width: 1220px;
     margin: 0 auto;
-    // background-color: #ffffff;
   }
 
   .example__header {
     margin-bottom: 0;
     margin-top: -35px;
+    padding-top: 16px;
+    font-weight: 400;
   }
 
   .example__container {
@@ -345,8 +349,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: linear-gradient(to top, #f2f2f2 67%, #ffffff 50%);
+    // background: linear-gradient(to top, #f2f2f2 67%, #ffffff 50%);
     margin-top: -160px;
+  }
+
+  .example__cost-price {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .example__weight {
@@ -360,6 +369,7 @@
     margin-top: 21px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .weight__text {
@@ -379,13 +389,17 @@
 
     &:last-child {
       margin-left: 10px;
+
+      & .weight__text {
+        margin-left: 0;
+      }
     }
   }
 
   .example__text {
     padding-right: 152px;
     margin-bottom: 59px;
-    margin-top: 300px;
+    margin-top: 291px;
   }
 
   .example__part {
@@ -396,8 +410,16 @@
     }
 
     &:last-child {
-      margin-top: -25px;
+      margin-bottom: 0;
     }
+  }
+
+  .example__before-text {
+    margin-right: 33px;
+  }
+
+  .example__after-text {
+    margin-left: -6px;
   }
 
   img.example__pic {

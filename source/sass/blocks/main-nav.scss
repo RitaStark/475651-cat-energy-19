@@ -10,11 +10,6 @@
   padding-left: 0;
 }
 
-.page-header__wrapper {
-  position: relative;
-  margin-bottom: -9px;
-}
-
 .main-nav {
   padding: 0;
   list-style: none;
@@ -199,7 +194,6 @@
   }
 
   .site-list__item {
-    // border-bottom: 2px solid #ffffff;
     font-size: 20px;
 
     &--border {
