@@ -36,29 +36,29 @@
 .catalog {
   width: 320px;
   margin: 0 auto;
+}
 
-  &__button {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    width: 280px;
-    margin: -3px auto 16px auto;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    background-color: #68b738;
-    color: #ffffff;
-    border: none;
-    padding: 7px 0 8px 0;
-    display: block;
-    cursor: pointer;
+.catalog__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  width: 280px;
+  margin: -3px auto 16px auto;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #68b738;
+  color: #ffffff;
+  border: none;
+  padding: 7px 0 8px 0;
+  display: block;
+  cursor: pointer;
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 

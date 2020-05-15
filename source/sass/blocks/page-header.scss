@@ -2,15 +2,15 @@
   width: 320px;
   margin: 0 auto;
   position: relative;
+}
 
-  &__menu-icon {
-    position: absolute;
-    top: 10px;
-    right: 0;
+.page-header__menu-icon {
+  position: absolute;
+  top: 10px;
+  right: 0;
 
-    border: none;
-    background-color: #ffffff;
-  }
+  border: none;
+  background-color: #ffffff;
 }
 
 .page-header__wrapper {
@@ -40,10 +40,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 3px;
+  }
 
-    &__menu-icon {
-      display: none;
-    }
+  .page-header__menu-icon {
+    display: none;
   }
 
   img.page-header__logo-image {
