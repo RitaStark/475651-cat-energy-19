@@ -1,5 +1,6 @@
 .comment__header {
   font-size: 24px;
+  font-weight: 400;
   text-transform: none;
   margin-top: 6px;
   margin-bottom: 33px;
@@ -8,10 +9,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 180px;
+    width: 100vw;
     height: 3px;
     top: 15px;
-    right: -41px;
+    right: -197px;
     background-color: #68b738;
   }
 }
@@ -43,18 +44,17 @@
     margin-bottom: 76px;
 
     &::after {
-      width: 500px;
       top: 22px;
-      right: -88px;
+      right: -366px;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 50px;
+      width: 100vw;
       height: 3px;
       top: 22px;
-      left: -91px;
+      right: 668px;
       background-color: #68b738;
     }
   }
@@ -80,6 +80,10 @@
   }
 
   .comment__header {
+    &::before {
+      right: 1230px;
+    }
+
     &::after {
       width: 1200px;
       right: -199px;
