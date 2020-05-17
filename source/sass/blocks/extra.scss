@@ -9,10 +9,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100vw;
+    min-width: 100vw;
     height: 3px;
     top: 15px;
-    right: -216px;
+    left: 182px;
     background-color: #68b738;
   }
 }
@@ -101,7 +101,7 @@ input[type="checkbox"] {
 
     &::after {
       top: 22px;
-      right: -400px;
+      left: 263px;
     }
 
     &::before {

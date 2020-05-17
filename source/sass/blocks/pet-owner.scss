@@ -10,10 +10,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100vw;
+    min-width: 100vw;
     height: 3px;
     top: 15px;
-    right: -256px;
+    left: 208px;
     background-color: #68b738;
   }
 }
@@ -84,7 +84,7 @@
 
     &::after {
       top: 22px;
-      right: -696px;
+      left: 541px;
     }
 
     &::before {

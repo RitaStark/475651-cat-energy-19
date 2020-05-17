@@ -15,10 +15,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 70px;
+    min-width: 100vw;
     height: 3px;
     top: 19px;
-    right: -17px;
+    left: 264px;
     background-color: #68b738;
   }
 }
@@ -92,19 +92,19 @@
     padding-bottom: 7px;
 
     &::after {
-      width: 350px;
+      // width: 350px;
       height: 3px;
       top: 50%;
-      right: -52px;
+      left: 411px;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 50px;
+      min-width: 100vw;
       height: 3px;
       top: 50%;
-      left: -51px;
+      right: 692px;
       background-color: #68b738;
     }
   }
@@ -188,9 +188,12 @@
     margin-left: 0;
     margin-top: 49px;
 
+    &::before {
+      right: 911px;
+    }
+
     &::after {
-      width: 931px;
-      right: -407px;
+      left: 378px;
     }
   }
 
