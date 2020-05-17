@@ -6,6 +6,7 @@
 .how-works__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   margin-top: 18px;
   margin-bottom: 33px;
 }
@@ -137,7 +138,6 @@
 
   .how-works__header {
     font-size: 60px;
-    font-weight: 400;
     margin-bottom: 0;
   }
 
@@ -145,6 +145,19 @@
     margin-left: 0;
     margin-top: -5px;
     line-height: 24px;
+    position: relative;
+
+    &::before {
+      content: "" counter(my-sec-counter);
+      position: absolute;
+      counter-increment: my-sec-counter;
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      top: -27px;
+      left: 112px;
+    }
   }
 
   .how-works__list {
@@ -156,6 +169,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  body {
+    counter-reset: my-sec-counter;
   }
 
   .how-works__item {
@@ -174,6 +191,12 @@
       background-color: #68b738;
       top: 0;
       left: 0;
+
+      // counter-increment: my-sec-counter;
+      // font-size: 281px;
+      // color: #f2f2f2;
+      // z-index: -1;
+      // font-family: "Oswald", "Arial", sans-serif;
     }
 
     &--leaf {
@@ -271,10 +294,10 @@
     width: 1220px;
     margin: 0 auto;
     border-bottom: none;
+  }
 
-    &__list {
-      padding-right: 0;
-    }
+  .how-works__list {
+    padding-right: 0;
   }
 
   .how-works__wrapper {

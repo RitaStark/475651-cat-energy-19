@@ -1,5 +1,6 @@
 .extra__header {
   font-size: 24px;
+  font-weight: 400;
   margin-bottom: 32px;
   margin-top: 10px;
   text-transform: none;
@@ -8,10 +9,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 180px;
+    min-width: 100vw;
     height: 3px;
     top: 15px;
-    right: -64px;
+    left: 182px;
     background-color: #68b738;
   }
 }
@@ -99,18 +100,17 @@ input[type="checkbox"] {
     margin-bottom: 26px;
 
     &::after {
-      width: 500px;
       top: 22px;
-      right: -120px;
+      left: 263px;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 50px;
       height: 3px;
+      width: 100vw;
       top: 22px;
-      left: -91px;
+      right: 668px;
       background-color: #68b738;
     }
   }
@@ -191,6 +191,10 @@ input[type="checkbox"] {
   }
 
   .extra__header {
+    &::before {
+      right: 1199px;
+    }
+
     &::after {
       width: 1200px;
       right: -269px;
@@ -226,9 +230,9 @@ input[type="checkbox"] {
     margin-left: 0;
     margin-right: 0;
     margin-top: 36px;
+  }
 
-    &__button {
-      margin-right: 80px;
-    }
+  .send-form__button {
+    margin-right: 80px;
   }
 }
